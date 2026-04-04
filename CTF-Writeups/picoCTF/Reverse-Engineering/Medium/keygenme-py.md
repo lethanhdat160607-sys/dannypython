@@ -292,19 +292,25 @@ Instead of manual calculation, I wrote an automation script to generate the dyna
 
 ```python
 import hashlib
+from cryptography.fernet import Fernet
+import base64
 
-# 1. Target Data from the source code
-username = b"BENNETT"
-prefix = "picoCTF{1n_7h3_kk3y_of_"
-suffix = "}"
+username_trial =b"BENNETT"
+bUsername_trial = b"BENNETT"
 
-# 2. Generate the SHA256 hash digest
-# hashlib.sha256(b"BENNETT").hexdigest()
-digest = hashlib.sha256(username).hexdigest()
+key_part_static1_trial = "picoCTF{1n_7h3_kk3y_of_"
+key_part_dynamic1_trial = "xxxxxxxx"
+key_part_static2_trial = "}"
+key_full_template_trial = key_part_static1_trial + key_part_dynamic1_trial + key_part_static2_trial
 
-# 3. Extract characters based on the identified order: 4, 5, 3, 6, 2, 7, 1, 8
-order = [4, 5, 3, 6, 2, 7, 1, 8]
-dynamic_part = "".join([digest[i] for i in order])
-
-# 4. Resulting Flag
-print(f"Full Flag: {prefix}{dynamic_part}{suffix}")
+print(hashlib.sha256(username_trial).hexdigest()[4])
+print(hashlib.sha256(username_trial).hexdigest()[5])
+print(hashlib.sha256(username_trial).hexdigest()[3])
+print(hashlib.sha256(username_trial).hexdigest()[6])
+print(hashlib.sha256(username_trial).hexdigest()[2])
+print(hashlib.sha256(username_trial).hexdigest()[7])
+print(hashlib.sha256(username_trial).hexdigest()[1])
+print(hashlib.sha256(username_trial).hexdigest()[8])
+```
+.` run code 0 8 c 4 6 a a 4
+. ` flag picoCTF{1n_7h3_kk3y_of_08c46aa4}
