@@ -53,7 +53,6 @@ Developing simulations for DNA double-helix structures and genetic mutations.
   <img src="images/dna_simulation_preview.gif" alt="Unity DNA Simulation Preview" width="600px" />
 </p>
 
-- **Core:** Unity 3D engine with C# scripts.
 - **Features:** Real-time mutation visualization and sequence analysis.
 
 ### 🖥️ High-Performance Development
