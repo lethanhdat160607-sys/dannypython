@@ -11,6 +11,20 @@ Welcome! I am a specialized CTF player and an aspiring researcher focusing on th
 
 ---
 
+## ✨ Inspiration & Vision
+
+<p align="center">
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight&quote=The%20quietest%20person%20in%20the%20room%20is%20often%20the%20one%20doing%20the%20most%20work.&author=Focus.%20Build.%20Succeed." alt="Inspiration Quote" />
+</p>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=Silent%20Work%20Loud%20Results&fontSize=50&animation=fadeIn" alt="Inspiration Header" />
+</p>
+
+> *"Success is not final, failure is not fatal: it is the courage to continue that counts."*
+
+---
+
 ## 🚩 CTF Domains & Security Research
 
 ### 🛠️ Low-Level (Pwn & Reversing)
@@ -50,7 +64,7 @@ Welcome! I am a specialized CTF player and an aspiring researcher focusing on th
 Developing simulations for DNA double-helix structures and genetic mutations.
 
 <p align="center">
-  <img src="images/dna_simulation_preview.gif" alt="Unity DNA Simulation Preview" width="600px" />
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJibmtidmZ6amZ6amZ6amZ6amZ6amZ6amZ6amZ6amZ6amZ6amZ6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/3o7TKVUn7iM8FMEU24/giphy.gif" alt="DNA Animation" width="400px" />
 </p>
 
 - **Features:** Real-time mutation visualization and sequence analysis.
@@ -75,4 +89,6 @@ Developing simulations for DNA double-helix structures and genetic mutations.
 
 ---
 
-> "Silent work, loud results."
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=auto&height=100&section=footer&text=The%20journey%20is%20the%20reward&fontSize=30" alt="Footer" />
+</p>
