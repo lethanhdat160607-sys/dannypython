@@ -7,7 +7,7 @@
 
 ---
 
-## 🔍 1. Challenge 
+## 🔍 Challenge 
 In this challenge, we are provided with a Python script called `keygenme-trial.py`. It acts as a trial version of an "Arcane Calculator." To unlock the full version and reveal the flag, we must reverse-engineer the license key verification logic.
 ### Code 
  ```python
