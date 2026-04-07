@@ -2,7 +2,7 @@
 
 - **Category:** General Skills ⚙️
 - **Difficulty:** Easy
-- **Target File:** ` check_password.py hash.txt userinfo.txt`
+- **Target File:** `check_password.py` `hash.txt` `userinfo.txt`
 - **Key Skills:** Static Analysis, Python Scripting, SHA256 Hashing
 
 ---
