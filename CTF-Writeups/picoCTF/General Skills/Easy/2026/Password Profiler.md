@@ -73,6 +73,8 @@ After declaring it, it will create a file named alice.txt
 
 </div>
 
+- **Cp**We use the `cp` function to copy the passwords file so that the Python file can call it.
  `~cp alice.txt passwords.txt`
  `~python3 check_password.py`
+ ##Run 
 . ` flag  picoCTF{Aj_15901990}
