@@ -3,7 +3,7 @@
 - **Category:** General Skills ⚙️
 - **Difficulty:** Easy
 - **Link:** `nc mysterious-sea.picoctf.net 64791`
-- **Key Skills:**  
+- **Key Skills:** Network and DNS
 ---
 
 ## 🔍 Challenge 
@@ -11,13 +11,14 @@ Can you make the server reveal its secrets? It seems to be able to ping Google D
 You can connect to the service here `nc mysterious-sea.picoctf.net 64791`
 
 ### 🧪 Logic Extraction:
-- strings: Filters out binary "junk," keeping only readable characters.
-- Uses: Searches for hidden text, error messages, function names, or URLs in non-text files (such as .exe, .bin, .png images, etc.).
-- | (Pipe): The funnel. Pushes results from the previous command to the next.
-- grep: The crawler. Only picks out lines containing the keyword you want.
+The challenge in the problem reveals the network configuration, and based on what we've learned 
+it might be hiding something, so let's check if it's concealing any files.
+
+- Perform
 ```
-~ strings file
-~ strings strings | grep pico
+nc mysterious-sea.picoctf.net 64791
 ```
+ 
+
 ## Run 
 .flag picoCTF{5tRIng5_1T_60eA8fdA}
