@@ -374,6 +374,6 @@ print(hashlib.sha256(username_trial).hexdigest()[7])
 print(hashlib.sha256(username_trial).hexdigest()[1])
 print(hashlib.sha256(username_trial).hexdigest()[8])
 ```
-## run 
+## Run 
 . code 0 8 c 4 6 a a 4
 . ` flag picoCTF{1n_7h3_kk3y_of_08c46aa4}
