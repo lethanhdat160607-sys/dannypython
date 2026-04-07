@@ -44,10 +44,22 @@ if __name__ == "__main__":
         print("No match found.")
 ```
 
-
 ## 🛠️ highlights in the code
+We see a note `#wordlist that was generated using CUPP`
+The code mentions that a file `password` file is needed to open it and executes the logic to return the code.
+```
+def crack_password(target_hash):
+    with open(WORDLIST_FILE, "r", encoding="utf-8", errors="ignore") as f:
+        for password in f:
+            password = password.strip()
+            if hashlib.sha1(password.encode()).hexdigest() == target_hash:
+                return password
+```
 
 ### 🧪 Logic Extraction:
+We will use the Cupp tool based on the notes and a `userinfo.txt` file provided in the problem statement.
+
+
 
 
 . ` flag picoCTF{1n_7h3_kk3y_of_08c46aa4}
