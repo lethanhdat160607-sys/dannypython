@@ -2,7 +2,7 @@
 
 - **Category:** General Skills ⚙️
 - **Difficulty:** Easy
-- **Target File:** `strings it`
+- **Target File:** `strings`
 - **Key Skills:** strings and grep  
 ---
 
