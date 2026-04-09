@@ -2,7 +2,7 @@
 
 - **Category:** General Skills⚙️
 - **Difficulty:** Easy
-- **Target File:** `keygenme-trial.py`
+- **Target File:** `ssh -p 54369 ctf-player@green-hill.picoctf.net`
 - **Key Skills:** Static Analysis, Python Scripting, SHA256 Hashing
 
 ---
