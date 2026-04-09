@@ -11,7 +11,22 @@ SSH to `dolphin-cove.picoctf.net:58486` and login as `ctf-player` with password 
 
 
 ### 🧪 Logic Extraction:
+After connecting to the server, I used the `ls` command to check, and there were quite a few files. One file, `instructions.txt`, seemed unusual compared to the others. I investigated further and found a hint. Pay attention to this section; we might need it: `The zip file is password protected. Use this "supersecret" password to extract the zip file.`
 
+<div align="center">
+    <img width="763" height="163" alt="image" src="https://github.com/user-attachments/assets/fd52cbc1-1978-4557-b934-63204ce8c48b" />
+
+</div>
+
+<div align="center">
+    <img width="613" height="401" alt="image" src="https://github.com/user-attachments/assets/5a5bf76c-2118-4d8d-b244-18205a3ac022" />
+
+</div>
+
+<div align="center">
+    <img width="1034" height="249" alt="image" src="https://github.com/user-attachments/assets/f504b928-cc07-4a50-a279-b75bebb7e5e0" />
+
+</div>
 
 ## Run 
 .flag picoCTF{z1p_and_spl1t_f1l3s_4r3_fun_2d6c5d3f}.
