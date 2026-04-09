@@ -1,7 +1,7 @@
-# 🚩 keygenme-py - picoCTF 2021
+# 🚩 SUDO MAKE ME A SANDWICH - picoCTF 2026
 
-- **Category:** Reverse Engineering ⚙️
-- **Difficulty:** Medium 🟠
+- **Category:** General Skills⚙️
+- **Difficulty:** Easy
 - **Target File:** `keygenme-trial.py`
 - **Key Skills:** Static Analysis, Python Scripting, SHA256 Hashing
 
