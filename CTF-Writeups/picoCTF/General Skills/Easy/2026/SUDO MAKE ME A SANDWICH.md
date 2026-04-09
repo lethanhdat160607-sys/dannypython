@@ -20,7 +20,7 @@ command couldn't open the file. So I tried `sudo -l` to see what lists were insi
   <img width="942" height="324" alt="image" src="https://github.com/user-attachments/assets/770a29b9-b382-4382-a16e-473b4c3feedd" />
 </div>
 - Execute this command to get the flag.
- `sudo emacs flag.txt`
+- `sudo emacs flag.txt`
 
 ## Run 
 .flag picoCTF{ju57_5ud0_17_f6cc9dec}
