@@ -14,7 +14,7 @@ Can you read the flag? I think you can!
 
 ### 🧪 Logic Extraction:
 
+<img width="942" height="324" alt="image" src="https://github.com/user-attachments/assets/770a29b9-b382-4382-a16e-473b4c3feedd" />
 
-## 💻 The Solver (Python Script)
 
 picoCTF{ju57_5ud0_17_f6cc9dec}
