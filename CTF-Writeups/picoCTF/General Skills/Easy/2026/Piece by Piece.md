@@ -20,6 +20,8 @@ file. We might need it: The compressed file is password protected. Let's use thi
 
 </div>
 
+I did some half-hearted exploration and testing to see if there was anything else special.
+
 <div align="center">
     <img width="613" height="401" alt="image" src="https://github.com/user-attachments/assets/5a5bf76c-2118-4d8d-b244-18205a3ac022" />
 
