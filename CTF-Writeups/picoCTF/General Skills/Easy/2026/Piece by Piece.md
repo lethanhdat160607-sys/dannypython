@@ -11,7 +11,9 @@ SSH to `dolphin-cove.picoctf.net:58486` and login as `ctf-player` with password 
 
 
 ### 🧪 Logic Extraction:
-After connecting to the server, I used the `ls` command to check, and there were quite a few files. One file, `instructions.txt`, seemed unusual compared to the others. I investigated further and found a hint. Pay attention to this section; we might need it: `The zip file is password protected. Use this "supersecret" password to extract the zip file.`
+After connecting to the server, I used the `ls` command to check and found quite a few files. One file, `instructions.txt`, seemed unusual compared 
+to the others. I investigated further and found a clue. Pay attention to this part; the flag is divided into several parts within a compressed 
+file. We might need it: The compressed file is password protected. Let's use this "super secret" password to decompress the compressed file.
 
 <div align="center">
     <img width="763" height="163" alt="image" src="https://github.com/user-attachments/assets/fd52cbc1-1978-4557-b934-63204ce8c48b" />
