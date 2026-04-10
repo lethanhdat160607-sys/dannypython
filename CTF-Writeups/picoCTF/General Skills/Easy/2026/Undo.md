@@ -8,7 +8,7 @@
 ---
 
 ## 🔍 Challenge 
-Can you reverse a series of Linux text transformations to recover the original flag?
+Can you reverse a series of Linux text transformations to recover the original flag?.
 Start searching for the flag here `nc foggy-cliff.picoctf.net 63770`.
 
 ### 🧪 Logic Extraction:
