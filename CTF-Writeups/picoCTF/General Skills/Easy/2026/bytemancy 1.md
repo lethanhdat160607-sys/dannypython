@@ -10,10 +10,10 @@
 ## 🔍 Challenge 
 
 Can you conjure the right bytes? The program's source code can be downloaded here.
+
 Connect to the program with netcat: `nc foggy-cliff.picoctf.net 49715`.
 
 
 ### 🧪 Logic Extraction:
 
 
-## 💻 The Solver (Python Script)
