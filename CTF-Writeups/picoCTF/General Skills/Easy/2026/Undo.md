@@ -64,3 +64,10 @@ preserving formatting elements such as digits and special characters, making it 
 
 </div> 
 
+When the flag appeared, I changed the minus sign to an underscore, and that made it a flag.
+
+
+## Run
+
+
+.flag picoCTF{Revers1ng_t3xt_Tr4nsf0rm@t10ns_a12e8886}
