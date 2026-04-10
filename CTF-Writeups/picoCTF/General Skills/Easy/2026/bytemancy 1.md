@@ -3,7 +3,7 @@
 - **Category:** General Skiils ⚙️
 - **Difficulty:** Easy 
 - **Target File:** `nc foggy-cliff.picoctf.net 49715`
-- **Key Skills:** Static Analysis, Python Scripting, SHA256 Hashing
+- **Key Skills:** Data Piping
 
 ---
 
