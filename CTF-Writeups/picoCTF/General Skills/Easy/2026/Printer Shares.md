@@ -22,7 +22,7 @@ The printer is on `51352`. you can try $ `nc -vz mysterious-sea.picoctf.net 5135
 
 <div align="center">
 
-    <img width="786" height="271" alt="image" src="https://github.com/user-attachments/assets/4a70818a-fd29-4c59-8dce-a835e043b093" />
+   <img width="786" height="271" alt="image" src="https://github.com/user-attachments/assets/800a33d2-3f37-489c-b3bd-51ad97f62b02" />
 
 </div>
 ## Run 
