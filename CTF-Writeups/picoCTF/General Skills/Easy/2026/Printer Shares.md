@@ -16,9 +16,14 @@ The printer is on `51352`. you can try $ `nc -vz mysterious-sea.picoctf.net 5135
 
 
 <div align="center">
-    <img width="656" height="85" alt="image" src="https://github.com/user-attachments/assets/e75f9c82-5eaa-4273-8e93-6bd5b527c00e" />
+    <img width="763" height="128" alt="image" src="https://github.com/user-attachments/assets/a405a024-0e5a-4ee7-b648-05754f60fad8" />
 
-</di
+</div> 
 
+<div align="center">
+
+    <img width="786" height="271" alt="image" src="https://github.com/user-attachments/assets/4a70818a-fd29-4c59-8dce-a835e043b093" />
+
+</div>
 ## Run 
 .flag picoCTF{5mb_pr1nter_5h4re5_8eb6dd5d} 
