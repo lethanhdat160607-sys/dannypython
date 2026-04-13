@@ -24,6 +24,7 @@ When you execute it, you'll see that it displays a network address, `8.8.8.8`, a
 
 </div> 
 
+#
 We then tried checking what was inside the network using the `ls` command, and it revealed several files, including flag.txt.
 
 <div align="center">
@@ -31,6 +32,7 @@ We then tried checking what was inside the network using the `ls` command, and i
 
 </div> 
 
+#
 After seeing the flag file, we proceed to view the flag file and see the flags.
 <div align="center">
     <img width="907" height="181" alt="image" src="https://github.com/user-attachments/assets/064c1cac-d35c-40ed-8959-a288f4ee6f79" />
