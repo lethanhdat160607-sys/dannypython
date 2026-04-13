@@ -27,6 +27,9 @@ Check the README to get your flag!
 | `git commit -m "flagggg"` | Records the changes in the local repository. | **Finalizing:** Sealing the package with the (fake) `root` fingerprint. |
 | `git push origin master` | Uploads local commits to the remote server. | **Delivery:** Sending the "spoofed package" to the server to trigger the flag. |
 
-## 💻 The Solver (Python Script)
+
+
+
+## Run 
 
 .flag picoCTF{1mp3rs0n4t4_g17_345y_e522152d}
