@@ -16,7 +16,7 @@ Check the README to get your flag!
 
 ### 🧪 Logic Extraction:
 
-### 1. Command Explanation Table
+### Command Explanation Table
 
 | Command | Technical Meaning | Purpose in CTF |
 | :--- | :--- | :--- |
