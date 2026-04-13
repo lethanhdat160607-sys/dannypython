@@ -27,6 +27,8 @@ Check the README to get your flag!
 | `git commit -m "flagggg"` | Records the changes in the local repository. | **Finalizing:** Sealing the package with the (fake) `root` fingerprint. |
 | `git push origin master` | Uploads local commits to the remote server. | **Delivery:** Sending the "spoofed package" to the server to trigger the flag. |
 
+
+
 <div align="center">
 
   <img width="669" height="356" alt="image" src="https://github.com/user-attachments/assets/1b7301b0-9b31-48d8-9a25-c0d55f498795" />
