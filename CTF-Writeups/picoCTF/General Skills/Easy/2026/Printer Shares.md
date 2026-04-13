@@ -22,8 +22,7 @@ We connect to the server and list the lists to perform checks and the shared fol
 </div> 
 
 #
-After creating the shared folder, we access the folder's address to log into the server and check for flags. Then, a flag file appears, which we can retrieve. After logging out, we open the file to find the flags.
-
+After using the command `smbclient //mysterious-sea.picoctf.net/shares -p 51872 -N`, we have a shared directory. We access the directory address to log into the server and check for flags. A flag file appears, so we download the flag file and exit. Once the file is downloaded, we open it to find the flags.
 <div align="center">
 
    <img width="786" height="271" alt="image" src="https://github.com/user-attachments/assets/800a33d2-3f37-489c-b3bd-51ad97f62b02" />
