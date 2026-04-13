@@ -1,7 +1,7 @@
-# 🚩 keygenme-py - picoCTF 2021
+# 🚩 MY GIT - picoCTF 2026
 
-- **Category:** Reverse Engineering ⚙️
-- **Difficulty:** Medium 🟠
+- **Category:** General Skills ⚙️
+- **Difficulty:** Easy 
 - **Target File:** `keygenme-trial.py`
 - **Key Skills:** Static Analysis, Python Scripting, SHA256 Hashing
 
@@ -14,3 +14,5 @@
 
 
 ## 💻 The Solver (Python Script)
+
+.flag picoCTF{1mp3rs0n4t4_g17_345y_e522152d}
