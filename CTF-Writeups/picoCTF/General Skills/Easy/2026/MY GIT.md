@@ -34,12 +34,15 @@ Check the README to get your flag!
 
   <img width="669" height="356" alt="image" src="https://github.com/user-attachments/assets/1b7301b0-9b31-48d8-9a25-c0d55f498795" />
 
-  <img width="624" height="41" alt="image" src="https://github.com/user-attachments/assets/a4f625f7-df90-47cf-bed5-b3472137e1fc" />
 
 </div> 
 
+  <img width="624" height="41" alt="image" src="https://github.com/user-attachments/assets/89b4d14d-27e0-4b72-ba13-e3b435503d71" />
+  <img width="513" height="88" alt="image" src="https://github.com/user-attachments/assets/a644c91f-afc2-41da-80a1-86936fbb8b5c" />
 
+<div align="center">
 
+</div>
 ## Run 
 
 .flag picoCTF{1mp3rs0n4t4_g17_345y_e522152d}
