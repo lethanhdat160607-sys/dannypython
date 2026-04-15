@@ -39,11 +39,6 @@ We perform password cracking using the `aircrack-ng` tool and combine it with th
 
 For cracking I used [aircrack-ng](https://aircrack-ng.org/) together with the rockyou wordlist. The wordlist is included in the [Leaked-Databases section](https://github.com/danielmiessler/SecLists/tree/master/Passwords/Leaked-Databases) of Daniel Miessler's SecLists if you don't have it already.
 
-Specify the SSID and the wordlist like this
-
-```bash
-Z:\CTFs\picoCTF\picoGym\Forensics\WPA-ing_Out>aircrack-ng -e Gone_Surfing -w C:\Sec-Lists\Passwords\Leaked-Databases\rockyou.txt wpa-ing_out.pcap
-```
 
 Then password is found very fast and is redacted below.
 
