@@ -30,6 +30,7 @@ Units are in 512-byte sectors
 
 ```
 #
+Then I used the strings command to check the file and look up keywords, but it had too many false flags.
 
 ```
 ┌──(kali㉿kali)-[~/Tools]
