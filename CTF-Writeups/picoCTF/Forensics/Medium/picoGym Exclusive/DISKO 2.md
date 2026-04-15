@@ -12,6 +12,8 @@ Download the disk image here.
 
 ### 🧪 Logic Extraction:
 
+I use the `mmls` command to retrieve a disk map and raw image files like `.dd` and `.img`. This helps display the partitions and how many partitions are inside (Linux, FAT32, NTFS, etc.), and is considered as sectors, slots, start, end, length, and description units.
+
 ```
 ┌──(kali㉿kali)-[~/Tools]
 └─$ mmls disko-2.dd           
@@ -27,7 +29,7 @@ Units are in 512-byte sectors
 004:  -------   0000118784   0000204799   0000086016   Unallocated
 
 ```
-
+#
 
 ```
 ┌──(kali㉿kali)-[~/Tools]
