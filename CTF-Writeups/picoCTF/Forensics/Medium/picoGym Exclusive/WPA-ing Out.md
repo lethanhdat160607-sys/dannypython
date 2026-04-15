@@ -37,8 +37,6 @@ We perform password cracking using the `aircrack-ng` tool and combine it with th
 
 </div>
 
-For cracking I used [aircrack-ng](https://aircrack-ng.org/) together with the rockyou wordlist. The wordlist is included in the [Leaked-Databases section](https://github.com/danielmiessler/SecLists/tree/master/Passwords/Leaked-Databases) of Daniel Miessler's SecLists if you don't have it already.
-
 
 Then password is found very fast and is redacted below.
 
