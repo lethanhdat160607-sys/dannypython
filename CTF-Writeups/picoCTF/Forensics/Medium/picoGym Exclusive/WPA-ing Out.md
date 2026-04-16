@@ -2,7 +2,7 @@
 
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
-- **Target File:** `pcap file`
+- **Target File:** `wpa-ing_out.pcap`
 - **Key Skills And Tools:** Aircrack-ng, Wireshark ,Password cracking and decryption
 ---
 
