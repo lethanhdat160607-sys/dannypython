@@ -46,9 +46,6 @@ The first method I used was simply to use `convert flag2of2-final.pdf flag2of2-f
 
 </div>
 
-# PDF Forensic Analysis: Visual Rendering vs. Raw Data Extraction
-
-In CTF (Capture The Flag) challenges, flags are often hidden in different "dimensions" of a file. Below is a comparison of two common approaches used in Kali Linux.
 
 ## Comparison Table
 
