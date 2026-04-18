@@ -25,17 +25,20 @@ I use a tool called Autopys to open hidden files and hidden packets to view them
   
 </div>
 
+#
 <div align="center">
 
   <img width="841" height="405" alt="image" src="https://github.com/user-attachments/assets/f7df8625-e3e9-49bf-9442-99af2b67c379" />
   
 </div>
+#
 
 <div align="center">
 
   <img width="854" height="505" alt="image" src="https://github.com/user-attachments/assets/7c706217-7b10-492f-a9b0-f796ae971e02" />
   
 </div>
+#
 
 <div align="center">
 
