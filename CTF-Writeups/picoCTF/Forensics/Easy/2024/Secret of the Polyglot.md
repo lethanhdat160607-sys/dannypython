@@ -33,16 +33,10 @@ The first method I used was simply to use `convert flag2of2-final.pdf flag2of2-f
 </div>
 
 ```
-
 ~binwalk flag2of2-final.pdf
-
 ~binwalk -e flag2of2-final.pdf
-
 ~ls -la _flag2of2-final.pdf.extracted/
-
 ~dd if=~/Tools/flag2of2-final.pdf of=extracted.png bs=1 count=914
-
-
 ```
 
 <div align="center">
