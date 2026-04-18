@@ -3,7 +3,7 @@
 - **Category:**General Skills ⚙️
 - **Difficulty:** Easy
 - **Target File:** `nc -vz mysterious-sea.picoctf.net 51352`
-- **Key Skills And Tools:** 
+- **Key Skills And Tools:** smbclient, Enumeration, Identifying Misconfigurations, Information Gathering
 
 ---
 
