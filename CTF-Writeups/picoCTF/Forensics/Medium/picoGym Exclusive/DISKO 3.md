@@ -63,14 +63,16 @@ I used the `strings` command to check for any abnormalities, and I found that th
 </div>
 
 #
-I used the command `fly -r -q disko-3.dd` to perform the operation. `fly` can be understood as listing the partitions, similar to the `ls` command, but it lists the partitions in the disk image. `-r` lists the files in the root directory and goes deeper into the directory. `-p` displays the full path, showing not just the file names but also the root directory path.
+I used the command `fly -r -q disko-3.dd` to perform the operation. `fly` can be understood as listing partitions, similar to the `ls` command, but it lists the partitions in the disk image. `-r` lists the files in the root directory and goes deeper into the directory. `-p` displays the full path, showing not just the file name but also the root directory path. I found a file named `flag.gz`.
 
 <div align="center">
  <img width="463" height="650" alt="image" src="https://github.com/user-attachments/assets/27afbd85-e607-4103-a1cf-8c6b4a8671c0" />
 
 </div>
+#
 
 <div align="center">
+  <img width="544" height="296" alt="image" src="https://github.com/user-attachments/assets/789c0634-114b-4d52-a09b-b429af26a52a" />
 
 </div>
 
