@@ -3,8 +3,7 @@
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
 - **Target File:** `pcap file`
-- **Key Skills And Tools:** Aircrack-ng, Wireshark ,Password cracking and decryption
----
+- **Key Skills And Tools:** Aotupys, 
 
 ## 🔍 Challenge 
 
@@ -14,7 +13,10 @@ Download the disk image here.
 
 
 ### 🧪 Logic Extraction:
+I use a tool called Autopys to open hidden files and hidden packets to view them.
 
+<div align="center">
+  <img width="842" height="315" alt="image" src="https://github.com/user-attachments/assets/ebe0219a-ecbe-4a73-83d8-a6b7923a6d4b" />
 
 <div>
 
