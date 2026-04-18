@@ -23,7 +23,7 @@ I use a tool called Autopys to open hidden files and hidden packets to view them
 </div>
 
 #
-
+Try opening the file disko3. 
 <div align="center">
   <img width="850" height="462" alt="image" src="https://github.com/user-attachments/assets/dbdb98a0-28af-4a48-8cc9-be5e87283e69" />
   <p> Autopys open file</p>
