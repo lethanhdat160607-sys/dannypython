@@ -2,7 +2,7 @@
 - **Category:** General Skills ⚙️
 - **Difficulty:** Easy
 - **Target File:** `ssh -p 58486 ctf-player@dolphin-cove.picoctf.net`
-- **Key Skills:** Using mathematical operations and data grouping.
+- **Key Skills And Tools:** Using mathematical operations and data grouping.
 ---
 
 ## 🔍 Challenge 
