@@ -3,7 +3,7 @@
 - **Category:** Forensics ⚙️
 - **Difficulty:** Easy
 - **Target File:** `flag2of2-final.pdf`
-- **Key Skills And Tools:** 
+- **Key Skills And Tools:** imagemagick, convert, binwalk, 
 ---
 
 ## 🔍 Challenge 
