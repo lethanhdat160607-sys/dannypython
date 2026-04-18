@@ -52,10 +52,34 @@ This is a disk hiding technique I'm showing you so you can see which files are h
 <div align="center">
   <img width="345" height="462" alt="image" src="https://github.com/user-attachments/assets/db9b0d0d-11c0-4e83-b0dc-dcfe581072ff" />
   <p> Autopys I opened the file and saw the flag. </p>
+</div>
 
+#
+Another way to do it is to search using the tools command in Kali Linux.
+I used the `strings` command to check for any abnormalities, and I found that the picoctf file showed very unusual activity from the drive.
+<div align="center">
+  <img width="683" height="380" alt="image" src="https://github.com/user-attachments/assets/15ecd15e-b185-4ca7-a10f-fc3044841ba9" />
+
+</div>
+
+#
+I used the command `fly -r -q disko-3.dd` to perform the operation. `fly` can be understood as listing the partitions, similar to the `ls` command, but it lists the partitions in the disk image. `-r` lists the files in the root directory and goes deeper into the directory. `-p` displays the full path, showing not just the file names but also the root directory path.
+
+<div align="center">
+ <img width="463" height="650" alt="image" src="https://github.com/user-attachments/assets/27afbd85-e607-4103-a1cf-8c6b4a8671c0" />
+
+</div>
+
+<div align="center">
+
+</div>
+
+<div align="center">
 
 </div>
 
 
+
 ## Run 
-.flag picoCTF{}
+.flag ppicoCTF{n3v3r_z1p_2_h1d3_26d4f233}
+
