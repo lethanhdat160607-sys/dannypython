@@ -13,10 +13,15 @@ Download this file here.
 ### 🧪 Logic Extraction:
 
 
-<div>
+<div align="center">
 
 <div>
 
+#
+<div align="center">
+
+</div>
 
 ## Run 
-.flag picoCTF{}
+.flag picoCTF{ME74D47A_HIDD3N_6a9f5ac4}
+
