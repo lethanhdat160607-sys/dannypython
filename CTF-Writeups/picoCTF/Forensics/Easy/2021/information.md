@@ -2,7 +2,7 @@
 
 - **Category:** Forensics ⚙️
 - **Difficulty:** Easy
-- **Target File:** `cat.jpf`
+- **Target File:** `cat.jpg`
 - **Key Skills And Tools:** exiftool, base64, steganography and data encryption techniques
 ---
 
