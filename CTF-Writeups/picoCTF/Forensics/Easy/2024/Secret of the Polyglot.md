@@ -42,8 +42,6 @@ The first method I used was simply to use `convert flag2of2-final.pdf flag2of2-f
 ```
 
 ```
-
-246
 # PNG: Starting from byte 0, take 914 bytes (until PDF begins)
 
 dd if=file of=png bs=1 count=914
