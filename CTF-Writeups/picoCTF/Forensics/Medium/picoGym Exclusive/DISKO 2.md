@@ -3,7 +3,7 @@
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
 - **Target File:** `disko-2.dd`
-- **Key Skills And Tools:** Sleuthkit,
+- **Key Skills And Tools:** Sleuthkit, Enumeration, Identifying Misconfigurations, Identifying Misconfigurations
 ---
 
 ## 🔍 Challenge 
