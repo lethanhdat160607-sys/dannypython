@@ -27,7 +27,7 @@ The first method I used was simply to use `convert flag2of2-final.pdf flag2of2-f
 </div>
 
 #
-
+We use the `binwalk flag2of2-final.pdf` command to check and scan for other hidden files. `binwalk` detects files at the offset of `0`, which are present in the structure of a `PNG` image. `binwalk e- flag2of2-final.pdf` automatically extracts the files, and `-e` commands to separate the subfiles into new folders. Simply put, `binwalk` is for viewing the file, while `binwalk -e` is for directly modifying the file. The command `ls -la _flag2of2-final.pdf.extracted/` lists all Binwalk files in detail, including compressed data such as hex and zlib. The command `dd if=~/Tools/flag2of2-final.pdf of=extracted.png bs=1 count=914` explains that `if=` is the source file you want to extract, `of=` is the destination file containing the extracted data, `bs=1` reads byte by byte to ensure absolute accuracy (this can be considered a standard), and `count=914` takes the first 914 bytes from Binwalk (checked above in the DECIMAL section). I've included an example below to help you understand. Using this method, you can read Streams, Metadata, or Polyglot headers without missing any.
 <div align="center">
   <img width="883" height="623" alt="image" src="https://github.com/user-attachments/assets/c1e8fab9-a391-4a69-b8a8-c16971883c88" />
 
