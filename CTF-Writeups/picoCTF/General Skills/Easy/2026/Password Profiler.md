@@ -3,7 +3,7 @@
 - **Category:** General Skills ⚙️
 - **Difficulty:** Easy
 - **Target File:** `check_password.py` `hash.txt` `userinfo.txt`
-- **Key Skills:** cupp
+- **Key Skills And Tools:** cupp
 ---
 
 ## 🔍 Challenge 
