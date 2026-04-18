@@ -48,6 +48,7 @@ And inside there's a half-flag file, and I've already seen the flag displayed.
 </div>
 
 #
+This is a disk hiding technique I'm showing you so you can see which files are hidden here.
 <div align="center">
   <img width="345" height="462" alt="image" src="https://github.com/user-attachments/assets/db9b0d0d-11c0-4e83-b0dc-dcfe581072ff" />
   <p> Autopys I opened the file and saw the flag. </p>
