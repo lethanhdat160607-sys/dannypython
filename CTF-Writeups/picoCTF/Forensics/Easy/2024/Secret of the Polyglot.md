@@ -41,6 +41,20 @@ The first method I used was simply to use `convert flag2of2-final.pdf flag2of2-f
 ~dd if=~/Tools/flag2of2-final.pdf of=extracted.png bs=1 count=914
 ```
 
+```
+
+246
+# PNG: Starting from byte 0, take 914 bytes (until PDF begins)
+
+dd if=file of=png bs=1 count=914
+
+# PDF: Starting from byte 914, take 235 bytes (1149 - 914 = 235)
+
+dd if=file of=pdf bs=1 skip=914 count=235
+
+# Zlib: Starting from byte 1149 to the end
+dd if=file of=zlib bs=1 skip=1149
+```
 <div align="center">
   <img width="1220" height="685" alt="image" src="https://github.com/user-attachments/assets/691e665c-3af2-45bd-8b90-873ca43b9b3f" />
 
