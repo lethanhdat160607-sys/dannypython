@@ -1,4 +1,4 @@
-# 🚩WPA-ing Out - picoGym Exclusive
+# 🚩 information - picoCTF 2021
 
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
@@ -14,9 +14,12 @@ cat.jpg
 ### 🧪 Logic Extraction:
 
 
-<div>
 
-<div>
+<div align="center">
+  <img width="731" height="498" alt="image" src="https://github.com/user-attachments/assets/a78b5f4a-6a79-4107-8374-a90412c40a70" />
+
+
+</div>
 
 
 ## Run 
