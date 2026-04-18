@@ -32,4 +32,4 @@ I used Cyberchef to convert the base64 encoding.
 
 
 ## Run 
-.flag picoCTF{}
+.flag picoCTF{the_m3tadata_1s_modified}
