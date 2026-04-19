@@ -26,12 +26,22 @@ We're checking what's in this server, and I've opened the files to examine them.
 
 </div>
 
-
+#
+We use the command `sha256sum files/* | Use `grep "467a10447deb3d4e17634cacc2a68ba6c2bb62a6637dad9145ea673bf0be5e02"` to search for hash codes in `files/*`. This searches all files on the provided server. Alternatively, use `grep "467a10447deb3d4e17634cacc2a68ba6c2bb62a6637dad9145ea673bf0be5e02"` to search for content and hash codes provided in the `checksum.txt` file. Next, use `./decrypt.sh files/c6c8b911` to exploit and obtain the `decrypt.sh` flag. This is a pre-written shell script that runs automatically to check files and verify hash codes, as in the previous example. `./` means to run this file directly in the directory where I am currently stopped, while `files/c6c8b911` (Arguments/Parameters) `files/` is the name of the directory containing the file, and `c6c8b911` is the name of the specific file I found above.
 <div align="center">
   <img width="1019" height="101" alt="image" src="https://github.com/user-attachments/assets/a1f6403f-ee24-43a8-bffa-16530da49309" />
 
 </div>
 
+
+```
+ctf-player@pico-chall$ sha256sum files/* | grep "467a10447deb3d4e17634cacc2a68ba6c2bb62a6637dad9145ea673bf0be5e02"
+467a10447deb3d4e17634cacc2a68ba6c2bb62a6637dad9145ea673bf0be5e02  files/c6c8b911
+ctf-player@pico-chall$ ls
+checksum.txt  decrypt.sh  files
+ctf-player@pico-chall$ ./decrypt.sh files/c6c8b911
+picoCTF{trust_but_verify_c6c8b911}
+```
   
 ## Run 
 .flag picoCTF{}
