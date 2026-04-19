@@ -1,9 +1,9 @@
-# 🚩WPA-ing Out - picoGym Exclusive
+# 🚩Scan Surprise - picoCTF 2024
 
 - **Category:** Forensics ⚙️
 - **Difficulty:** Easy
 - **Target File:** `challenge.zip`, `ssh -p 51416 ctf-player@atlas.picoctf.net`
-- **Key Skills And Tools:** Aircrack-ng, Wireshark ,Password cracking and decryption
+- **Key Skills And Tools:** data analysis
 ---
 
 ## 🔍 Challenge 
@@ -18,11 +18,19 @@ Using the password `66abf4a82. Accept the fingerprint with `yes`, and `ls` once 
 
 ### 🧪 Logic Extraction:
 
+Once connected, it will give you a QR code image.
 
-<div>
+<div align="center">
+  <img width="784" height="732" alt="image" src="https://github.com/user-attachments/assets/8a18e255-5cbc-4545-824a-b995c1e39ca2" />
 
-<div>
 
+</div>
+#
+I used Google to find the image and found the flag.
+<div align="center">
+  <img width="1032" height="428" alt="image" src="https://github.com/user-attachments/assets/ec2453e1-86bd-42fd-8525-af4e37b43965" />
+
+</div>
 
 ## Run 
-.flag picoCTF{}
+.flag picoCTF{p33k_@_b00_7843f77c}
