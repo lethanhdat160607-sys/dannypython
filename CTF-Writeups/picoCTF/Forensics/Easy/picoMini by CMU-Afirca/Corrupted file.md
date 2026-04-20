@@ -3,7 +3,7 @@
 - **Category:** Forensics ⚙️
 - **Difficulty:** Easy
 - **Target File:** `file`
-- **Key Skills And Tools:** 
+- **Key Skills And Tools:** hexedit, mv, xxd, jpeg, Identification mark
 ---
 
 ## 🔍 Challenge 
@@ -29,7 +29,7 @@ The end point of the file is fine; it's correct according to the standard `FF D9
 </div>
 
 #
-
+I used commands like `hexedit` to change the bytes and `mv` to change the file extension to `jpeg`, then opened the file and the flag appeared.
 ```
 ┌──(kali㉿kali)-[~/Tools]
 └─$ hexedit file 
