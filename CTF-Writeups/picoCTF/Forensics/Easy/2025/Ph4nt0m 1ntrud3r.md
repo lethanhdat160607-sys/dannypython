@@ -2,7 +2,7 @@
 
 - **Category:** Forensics ⚙️
 - **Difficulty:** Easy
-- **Target File:** `pcap file`
+- **Target File:** ` myNetworkTraffic.pcap`
 - **Key Skills And Tools:** Aircrack-ng, Wireshark ,Password cracking and decryption
 ---
 
@@ -17,23 +17,24 @@ Find the PCAP file here Network Traffic PCAP file and try to get the flag.
 
 
 <div align="center">
+    <img width="1365" height="734" alt="image" src="https://github.com/user-attachments/assets/1bc44992-6bca-4f22-8ab6-9f29e006107c" />
 
 </div> 
 
-
-
+#
+From the keys in the file, we find a way to convert them to base64 encoding.
 ```
-Frame 2: bnRfdGg0dA==
-Frame 3 : fQ==
-Frame 5: ZTFmZjA2Mw==
-Frame 9: XzM0c3lfdA==
-Frame 10: ezF0X3c0cw==
-Frame 12: cGljb0NURg==
-Frame 21: YmhfNHJfMg==
+Frame 2: bnRfdGg0dA== --> nt_th4t
+Frame 3 : fQ== --> } 
+Frame 5: ZTFmZjA2Mw== --> e1ff063
+Frame 9: XzM0c3lfdA== --> _34sy_t
+Frame 10: ezF0X3c0cw== --> {1t_w4s
+Frame 12: cGljb0NURg== --> picoCTF
+Frame 21: YmhfNHJfMg== --> bh_4r_2
 ```
 
-## Code Python 
-
+## 💻 The Solver (Python Script)
+Because the flag is somewhat noisy, I used code to exhaust all flag possibilities and tested it to determine when a flag is found.
 ```
 import itertools
 
@@ -81,31 +82,5 @@ except IOError as e:
     print(f"\n[!] Error saving file: {e}")
 ```
 
-```
-1: picoCTF{1t_w4snt_th4te1ff063_34sy_tbh_4r_2}
-2: picoCTF{1t_w4snt_th4te1ff063bh_4r_2_34sy_t}
-3: picoCTF{1t_w4snt_th4t_34sy_te1ff063bh_4r_2}
-4: picoCTF{1t_w4snt_th4t_34sy_tbh_4r_2e1ff063}
-5: picoCTF{1t_w4snt_th4tbh_4r_2e1ff063_34sy_t}
-6: picoCTF{1t_w4snt_th4tbh_4r_2_34sy_te1ff063}
-7: picoCTF{1t_w4se1ff063nt_th4t_34sy_tbh_4r_2}
-8: picoCTF{1t_w4se1ff063nt_th4tbh_4r_2_34sy_t}
-9: picoCTF{1t_w4se1ff063_34sy_tnt_th4tbh_4r_2}
-10: picoCTF{1t_w4se1ff063_34sy_tbh_4r_2nt_th4t}
-11: picoCTF{1t_w4se1ff063bh_4r_2nt_th4t_34sy_t}
-12: picoCTF{1t_w4se1ff063bh_4r_2_34sy_tnt_th4t}
-13: picoCTF{1t_w4s_34sy_tnt_th4te1ff063bh_4r_2}
-14: picoCTF{1t_w4s_34sy_tnt_th4tbh_4r_2e1ff063}
-15: picoCTF{1t_w4s_34sy_te1ff063nt_th4tbh_4r_2}
-16: picoCTF{1t_w4s_34sy_te1ff063bh_4r_2nt_th4t}
-17: picoCTF{1t_w4s_34sy_tbh_4r_2nt_th4te1ff063}
-18: picoCTF{1t_w4s_34sy_tbh_4r_2e1ff063nt_th4t}
-19: picoCTF{1t_w4sbh_4r_2nt_th4te1ff063_34sy_t}
-20: picoCTF{1t_w4sbh_4r_2nt_th4t_34sy_te1ff063}
-21: picoCTF{1t_w4sbh_4r_2e1ff063nt_th4t_34sy_t}
-22: picoCTF{1t_w4sbh_4r_2e1ff063_34sy_tnt_th4t}
-23: picoCTF{1t_w4sbh_4r_2_34sy_tnt_th4te1ff063}
-24: picoCTF{1t_w4sbh_4r_2_34sy_te1ff063nt_th4t}
-```
 ## Run 
 .flag picoCTF{1t_w4snt_th4t_34sy_tbh_4r_2e1ff063}
