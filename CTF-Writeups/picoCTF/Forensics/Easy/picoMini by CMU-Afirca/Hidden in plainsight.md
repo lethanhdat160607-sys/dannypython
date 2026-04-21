@@ -15,14 +15,21 @@ Download the jpg image here.
 
 
 <div align="center">
+    <img width="552" height="338" alt="image" src="https://github.com/user-attachments/assets/1f4376c7-0c53-4810-b9dc-c87813ef3f14" />
 
 </div>
 
 
 <div align="center">
+    <img width="540" height="101" alt="image" src="https://github.com/user-attachments/assets/f39f3c5b-524e-4d83-be69-f1dbff2f0a4a" />
 
 </div>
 
+<div align="center"> 
+    <img width="430" height="163" alt="image" src="https://github.com/user-attachments/assets/b6aaebf9-a99a-4516-b70f-e1572729897f" />
+
+</div> 
 
 ## Run 
-.flag picoCTF{r3st0r1ng_th3_by73s_efd8c6c0}
+.flag picoCTF{h1dd3n_1n_1m4g3_92f08d7c}
+
