@@ -3,7 +3,7 @@
 - **Category:** Forensics ⚙️
 - **Difficulty:** Easy
 - **Target File:** `confidential.pdf`
-- **Key Skills And Tools:** 
+- **Key Skills And Tools:** base64, exiftool, pdf, reading images and extracting data.
 ----
 
 ## 🔍 Challenge 
@@ -14,6 +14,7 @@ Find the PDF file here Hidden Confidential Document and uncover the flag within 
 
 ### 🧪 Logic Extraction:
 
+To test this, I realized it was a PDF file. I used the `xxd` command to check if the file was actually a PDF or if it was a different file converted to PDF. It turned out to be a PDF because the first few bytes were `25 50 44 46`In the ASCII character set, these hexadecimal values ​​correspond to: `25 = %, 50 = P, 44 = D, 46 = F`
 
 <div align="center">
   <img width="704" height="358" alt="image" src="https://github.com/user-attachments/assets/ae3edee2-8b3f-40d4-827c-e793e54699f5" />
