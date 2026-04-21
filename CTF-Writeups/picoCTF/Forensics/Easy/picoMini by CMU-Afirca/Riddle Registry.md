@@ -2,7 +2,7 @@
 
 - **Category:** Forensics ⚙️
 - **Difficulty:** Easy
-- **Target File:** ``
+- **Target File:** `confidential.pdf`
 - **Key Skills And Tools:** 
 ----
 
