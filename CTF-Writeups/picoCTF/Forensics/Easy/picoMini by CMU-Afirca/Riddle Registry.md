@@ -21,6 +21,8 @@ To test this, I realized it was a PDF file. I used the `xxd` command to check if
 
 </div> 
 
+#
+Next, I used the `exiftool` command to extract the data and found a piece of code with signs of `base64`, which I changed to get the flag.
 
 <div align="center"> 
 
