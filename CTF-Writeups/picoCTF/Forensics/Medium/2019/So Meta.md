@@ -17,7 +17,7 @@ Find the flag in this picture.
 <div align="center">
    <img width="776" height="382" alt="image" src="https://github.com/user-attachments/assets/4936cdc4-6fe5-4b6c-9da9-ccf8540bded7" />
 
-<div>
+</div>
 
 
 ## Run 
