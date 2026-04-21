@@ -3,7 +3,7 @@
 - **Category:** Forensics ⚙️
 - **Difficulty:** Easy
 - **Target File:** `img.jpg`
-- **Key Skills And Tools:** base64, exiftool, steghide, reading images and extracting data.
+- **Key Skills And Tools:** base64, exiftool, jpg, steghide, reading images and extracting data.
 ---
 
 ## 🔍 Challenge 
