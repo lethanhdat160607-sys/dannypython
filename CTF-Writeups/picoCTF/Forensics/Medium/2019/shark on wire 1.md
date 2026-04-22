@@ -27,7 +27,7 @@ I tried to examine the data and became suspicious because they usually hide the 
 </div>
 
 #
-
+Let's check the UDP stream to see if there's any unusual data.
 <div align="center">
     <img width="952" height="599" alt="image" src="https://github.com/user-attachments/assets/90b90f90-ec7a-495a-939c-309df51678fe" />
 
