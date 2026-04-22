@@ -1,8 +1,8 @@
-# 🚩shark on wire 1c - picoCTF 2019
+# 🚩shark on wire 1 - picoCTF 2019
 
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
-- **Target File:** `pico_img.png`
+- **Target File:** `capture.pcap`
 - **Key Skills And Tools:** wireshark, 
 ---
 
