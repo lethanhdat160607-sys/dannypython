@@ -3,7 +3,7 @@
 - **Category:** Reverse Engineering ⚙️
 - **Difficulty:** Easy
 - **Target File:** `keygenme-trial.py`
-- **Key Skills And Tool:** nano, 
+- **Key Skills And Tool:** nano, python, code comprehension
 
 ---
 
