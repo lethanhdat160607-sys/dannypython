@@ -20,6 +20,8 @@ This challenge has a .txt file containing hidden data, seemingly including accou
 
 </div>
 
+I'm using a Python code snippet for encoding. Actually, to understand the code, you can use a trial-and-error method to replace each binary instance. Take the first 8 bits: "01110000". Convert to decimal: 112. Look up the ASCII table: 112 is the letter 'p' (the first letter of picoCTF).
+
 ```
 from pwn import *
 
