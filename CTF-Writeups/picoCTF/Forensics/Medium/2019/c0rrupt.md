@@ -115,4 +115,4 @@ Open the file and get the flag.
 </div>
 
 ## Run 
-.flag picoCTF{now_you_know_about_extensions}
+.flag picoCTF{cOrrupt10n_18479951}
