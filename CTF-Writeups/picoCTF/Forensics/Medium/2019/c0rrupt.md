@@ -12,8 +12,8 @@ We found this file. Recover the flag.
 
 ### 🧪 Logic Extraction:
 
-```
-                                                                                                                                                            
+I used the `xxd` command to extract the data from the first 20 lines of the file.
+```                                                                                                                                                           
 ┌──(kali㉿kali)-[~/Tools]
 └─$ xxd mystery | head -n 20
 00000000: 8965 4e34 0d0a b0aa 0000 000d 4322 4452  .eN4........C"DR
@@ -39,7 +39,7 @@ We found this file. Recover the flag.
 
 ```
 #
-
+I used the `xxd` command to extract the data from the last 20 lines of the file.
 ```
                                                                                                                                                             
 ┌──(kali㉿kali)-[~/Tools]
@@ -67,6 +67,19 @@ We found this file. Recover the flag.
 
 ```
 
+#
+Use the `hexedit` command to modify the file's data, and the `pngcheck` command to extract the data to check if the image file formats (PNG, IHDR, IDAT, etc.) are correct.
+
+```
+┌──(kali㉿kali)-[~/Tools]
+└─$ hexedit mystery
+
+┌──(kali㉿kali)-[~/Tools]
+└─$ pngcheck -v mystery
+
+```
+#
+
 ```
 ┌──(kali㉿kali)-[~/Tools]
 └─$ xxd mystery | head -n20 
@@ -91,14 +104,7 @@ We found this file. Recover the flag.
 00000120: 8b45 97f5 f5d9 62b1 582c 168b c562 b158  .E....b.X,...b.X
 00000130: 2c16 8bc5 62d1 657d 7db6 582c 168b c562  ,...b.e}}.X,...b
 ```
-```
-┌──(kali㉿kali)-[~/Tools]
-└─$ hexedit mystery
 
-┌──(kali㉿kali)-[~/Tools]
-└─$ pngcheck -v mystery
-
-```
 
 <div> 
   <img width="1009" height="389" alt="image" src="https://github.com/user-attachments/assets/eb2d218b-3b4b-4724-ae93-468c07f09c01" />
