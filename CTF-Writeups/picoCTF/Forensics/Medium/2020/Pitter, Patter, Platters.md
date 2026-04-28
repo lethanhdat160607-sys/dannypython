@@ -2,8 +2,8 @@
 
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
-- **Target File:** `pico_img.png`
-- **Key Skills And Tools:** exiftool, data extraction
+- **Target File:** `suspicious.dd.sda1`
+- **Key Skills And Tools:** file, fls, icat, xxd, 
 ---
 
 ## 🔍 Challenge 
