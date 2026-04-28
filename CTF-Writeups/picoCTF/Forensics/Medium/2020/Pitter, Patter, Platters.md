@@ -15,20 +15,15 @@
 
 
 
-
-
-
-
-
-
-
-
 ```
 
 ┌──(kali㉿kali)-[~/Tools]
 └─$ file suspicious.dd.sda1
 suspicious.dd.sda1: Linux rev 1.0 ext3 filesystem data, UUID=fc168af0-183b-4e53-bdf3-9c1055413b40 (needs journal recovery)
-                                                                             
+
+```
+#
+```                                                                         
 ┌──(kali㉿kali)-[~/Tools]
 └─$ fls -r suspicious.dd.sda1
 d/d 11: lost+found
@@ -92,11 +87,16 @@ d/d 4017:       tce
 + r/r 4021:     onboot.lst
 r/r 12: suspicious-file.txt
 V/V 8033:       $OrphanFiles
-                                                                             
+```
+#
+
+```                                                                             
 ┌──(kali㉿kali)-[~/Tools]
 └─$ icat suspicious.dd.sda1 12
 Nothing to see here! But you may want to look here -->
-                                                                             
+```
+#
+```                                                                             
 ┌──(kali㉿kali)-[~/Tools]
 └─$ xxd suspicious.dd.sda1 | grep -e "-->" 
 00200430: 7265 202d 2d3e 0a7d 0033 0039 0038 0036  re -->.}.3.9.8.6
@@ -146,13 +146,21 @@ Nothing to see here! But you may want to look here -->
 01e8c090: e14a 97f6 8226 dd4b 72c4 56ec 7ce0 e93b  .J...&.Kr.V.|..;
 01e8c0a0: b377 8781 54ea 8f9e 74ba d99d 99e7 7de6  .w..T...t.....}.
 01e8c0b0: 99f7 ebb2 e826 922c 3867 9521 357e 7e6b  .....&.,8g.!5~~k
-                                                                                                                                                            
+
+```
+#
+
+```           
 ┌──(kali㉿kali)-[~/Tools]
 └─$ xxd suspicious.dd.sda1 | grep -e "-->" -A 4 | xxd -r 
 re -->
 }3986312f_3<_|Lm_111t5_3b{FTCocip�ض=-->��Kf���T4"ﰳ��Z���Z-�[3"��������G�Yz0�����H�=�������
                                                                                           +�'�(�%L▒K55
-Jr-->BS'�&i��k�;!�~��!$0;I�>ɓaE*@B�?��P���j�` �Gy����K\�J���&�Kr�V�|��;                                                                                                                                                            
+Jr-->BS'�&i��k�;!�~��!$0;I�>ɓaE*@B�?��P���j�` �Gy����K\�J���&�Kr�V�|��;                                                      
+
+```
+#
+```
 ┌──(kali㉿kali)-[~/Tools]
 └─$ echo "}3986312f_3<_|Lm_111t5_3b{FTCocip" | rev
 picoCTF{b3_5t111_mL|_<3_f2136893}
