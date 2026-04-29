@@ -16,6 +16,13 @@ weird.docm
 
 ```
 ┌──(kali㉿kali)-[~/Tools]
+└─$ file weird.docm
+weird.docm: Microsoft Word 2007+
+
+```
+
+```
+┌──(kali㉿kali)-[~/Tools]
 └─$ olevba weird.docm                                     
 olevba 0.60.2 on Python 3.13.12 - http://decalage.info/python/oletools
 ===============================================================================
