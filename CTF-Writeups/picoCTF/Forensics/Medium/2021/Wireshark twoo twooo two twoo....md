@@ -1,4 +1,4 @@
-# 🚩So Meta - picoCTF 2021
+# 🚩Wireshark twoo twooo two twoo... - picoCTF 2021
 
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
