@@ -2,8 +2,8 @@
 
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
-- **Target File:** `pico_img.png`
-- **Key Skills And Tools:** 
+- **Target File:** `weird.docm`
+- **Key Skills And Tools:** base64, file, olevba, Static File Analysis
 ---
 
 ## 🔍 Challenge 
