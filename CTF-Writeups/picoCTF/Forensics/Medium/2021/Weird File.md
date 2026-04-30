@@ -13,6 +13,7 @@ weird.docm
 
 ### 🧪 Logic Extraction:
 
+I used the `file` command to view the file's data because it's a Microsoft Word 2007+ file.
 
 ```
 ┌──(kali㉿kali)-[~/Tools]
@@ -20,6 +21,7 @@ weird.docm
 weird.docm: Microsoft Word 2007+
 
 ```
+I use the `olevba` command to scan and analyze Microsoft Office files (such as .doc, .xls, .ppt, .docm, .xlsm,...) to search for, extract, and analyze VBA macro code snippets. This is because commands like `exiftool` and `xxd` usually cannot find them.
 
 ```
 ┌──(kali㉿kali)-[~/Tools]
@@ -65,7 +67,17 @@ End Sub
 |Suspicious|run                 |May run an executable file or a system       |
 |          |                    |command                                      |
 +----------+--------------------+---------------------------------------------+
+```
 
+This part is base64, you can convert it and you're done.
+```
+Ret_Val = Shell("python -c 'print(\"cGljb0NURnttNGNyMHNfcl9kNG5nM3IwdXN9\")'" & " " & Args, vbNormalFocus)
+
+```
+#
+
+Changing the base64 data will give you the flag.
+```
                                                                              
 ┌──(kali㉿kali)-[~/Tools]
 └─$ echo "cGljb0NURnttNGNyMHNfcl9kNG5nM3IwdXN9" | base64 -d
