@@ -65,4 +65,4 @@ Next, I saw the `base64` code, but it turned out to be just a flag.
 picoCTF{dns_3xf1l_ftw_deadbeef}}
 ```
 ## Run 
-.flag picoCTF{dns_3xf1l_ftw_deadbeef}}                                                                                                                                                           
+.flag picoCTF{dns_3xf1l_ftw_deadbeef}                                                                                                                                                     
