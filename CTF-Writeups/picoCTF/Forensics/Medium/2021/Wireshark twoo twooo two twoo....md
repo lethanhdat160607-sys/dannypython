@@ -21,6 +21,8 @@ I used the `wireshark` command to read the packets and I saw quite a lot of `HTT
 </div>
 #
 
+I use the `tshark` command to analyze network traffic. `-nr` reads the stored data file (`-r`) without reversing the domain name (`-n`) for faster reading speed, while `-Y 'dns'` applies a display filter, keeping only packets belonging to the DNS protocol.
+
 ```
 ┌──(kali㉿kali)-[~/Tools]
 └─$ tshark -nr shark2.pcapng -Y 'dns'
