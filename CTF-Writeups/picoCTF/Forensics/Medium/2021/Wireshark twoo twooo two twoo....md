@@ -14,6 +14,7 @@ shark2.pcapng
 
 ### 🧪 Logic Extraction:
 
+I used the `wireshark` command to read the packets and I saw quite a lot of `HTTP` and web links, so I opened the HTTP object list and saw a flag file, but there were so many of them that I guessed it was just a dummy flag.
 
 <div align="center"> 
   <img width="1361" height="575" alt="image" src="https://github.com/user-attachments/assets/98c29adb-0192-4c38-b301-4b0023db066c" />
