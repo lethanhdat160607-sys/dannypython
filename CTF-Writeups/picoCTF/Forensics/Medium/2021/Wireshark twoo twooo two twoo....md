@@ -3,7 +3,7 @@
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
 - **Target File:** `shark2.pcapng`
-- **Key Skills And Tools:**  wireshark, tshark, 
+- **Key Skills And Tools:**  wireshark, tshark, reading hidden packets
 ---
 
 ## 🔍 Challenge 
@@ -51,11 +51,13 @@ Next, use the `awk` command for extremely powerful text processing by column: `{
 ┌──(kali㉿kali)-[~/Tools]
 └─$ tshark -nr shark2.pcapng -Y 'dns' | grep -v '8.8.8.8' | grep -v response | grep local | awk '{print $12}'
 ```
+Next, I use `sed 's/\..*//'` and `sed` uses the regular expression `s` to replace `\.`. I find the first dot, `.*` finds all the remaining characters after that dot, `//` replaces all of that with 'empty' (deletes it). This will cut off the last part of the domain name (`.reddshrimpandherring.com...`) and only keep the base64 string at the beginning.
 
 ```
 ┌──(kali㉿kali)-[~/Tools]
 └─$ tshark -nr shark2.pcapng -Y 'dns' | grep -v '8.8.8.8' | grep -v response | grep local | awk  '{print $12}' | sed  's/\..*//' 
 ```
+Next, I saw the `base64` code, but it turned out to be just a flag.
 
 ```
 ┌──(kali㉿kali)-[~/Tools]
