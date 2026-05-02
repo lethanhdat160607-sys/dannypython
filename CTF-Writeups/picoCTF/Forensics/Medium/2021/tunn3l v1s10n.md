@@ -3,7 +3,7 @@
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
 - **Target File:** `tunn3l_v1s10n`
-- **Key Skills And Tools:** xxd, exiftool, fed, ghex,
+- **Key Skills And Tools:** xxd, exiftool, fed, ghex, Reading data from BMP image files.
 ---
 
 ## 🔍 Challenge 
