@@ -47,6 +47,8 @@ I used the `xxd` command to view the ciphertext, and it seems to be messing up t
 00000130: 291e 422e 234b 372c 4531 263f 2b20 432f  ).B.#K7,E1&?+ C/
 ```
 
+I used the `ghex` command to modify the code; it's quite similar to the `HxD` tool for modifying code.
+
 <div align="center">
   <img width="1317" height="488" alt="image" src="https://github.com/user-attachments/assets/a638b5c8-3d82-46cf-9635-685ce272510b" />
 
