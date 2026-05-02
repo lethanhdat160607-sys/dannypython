@@ -13,14 +13,16 @@ tunn3l_v1s10n
 
 ### 🧪 Logic Extraction:
 
+I used the `exiftool` command to treat this as a `BMP` file.
 
 <div align="center">  
   <img width="574" height="332" alt="image" src="https://github.com/user-attachments/assets/739b2feb-a633-4ea7-9af8-80fc6258e1cc" />
-</div>div>
+</div>
 
+#
+I used the `xxd` command to view the ciphertext, and it seems to be messing up the bit ciphertext.
 
-```
-                                                                                                                                                           
+```  
 ┌──(kali㉿kali)-[~/Tools/CTF]
 └─$ xxd tunn3l_v1s10n | head -n20
 00000000: 424d 8e26 2c00 0000 0000 bad0 0000 bad0  BM.&,...........
@@ -44,6 +46,7 @@ tunn3l_v1s10n
 00000120: 5039 294f 3829 4b35 2950 3a2f 4b35 2a3f  P9)O8)K5)P:/K5*?
 00000130: 291e 422e 234b 372c 4531 263f 2b20 432f  ).B.#K7,E1&?+ C/
 ```
+
 <div align="center">
   <img width="1317" height="488" alt="image" src="https://github.com/user-attachments/assets/a638b5c8-3d82-46cf-9635-685ce272510b" />
 
