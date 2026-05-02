@@ -79,4 +79,4 @@ The photo shows the flag.
 </div>
 
 ## Run 
-.flag 
+.flag picoCTF{qu1t3_a_v13w_2020}
