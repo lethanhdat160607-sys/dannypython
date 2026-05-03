@@ -2,7 +2,7 @@
 
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
-- **Target File:** `pico_img.png`
+- **Target File:** `dds2-alpine.flag.img.gz`
 - **Key Skills And Tools:** exiftool, data extraction
 ---
 
