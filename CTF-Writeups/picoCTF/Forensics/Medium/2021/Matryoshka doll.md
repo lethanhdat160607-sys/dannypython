@@ -124,4 +124,5 @@ Target File:   /home/kali/Tools/CTF/_dolls.jpg.extracted/base_images/_2_c.jpg.ex
 picoCTF{LL9lb1dR4QbGe4l4iWCvGq9pdtwt7392}
 ```
 ## Run 
-.flag picoCTF{s0_m3ta_9a8b5aa1}
+.flag picoCTF{LL9lb1dR4QbGe4l4iWCvGq9pdtwt7392}
+
