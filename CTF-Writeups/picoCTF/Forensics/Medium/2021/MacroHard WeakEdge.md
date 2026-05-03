@@ -3,7 +3,7 @@
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
 - **Target File:** `Forensics_is_fun.pptm`
-- **Key Skills And Tools:** file, olevba,
+- **Key Skills And Tools:** file, olevba, Search for hidden Microsoft files
 ---
 
 ## 🔍 Challenge 
