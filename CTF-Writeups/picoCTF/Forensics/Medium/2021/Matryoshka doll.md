@@ -3,7 +3,7 @@
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
 - **Target File:** `dolls.jpg`
-- **Key Skills And Tools:** 
+- **Key Skills And Tools:** binwalk, extract hidden data
 ---
 
 ## 🔍 Challenge 
@@ -114,12 +114,13 @@ DECIMAL       HEXADECIMAL     DESCRIPTION
 --------------------------------------------------------------------------------
 
 ```
+I discovered a hidden flag file.
 
 ```
 Scan Time:     2026-05-03 03:50:59
 Target File:   /home/kali/Tools/CTF/_dolls.jpg.extracted/base_images/_2_c.jpg.extracted/base_images/_3_c.jpg.extracted/base_images/_4_c.jpg.extracted/flag.txt
 ```
-
+Use the `cat` command to access the file and get the flag.
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF/_dolls.jpg.extracted/base_images]
 └─$ cat _2_c.jpg.extracted/base_images/_3_c.jpg.extracted/base_images/_4_c.jpg.extracted/flag.txt 
