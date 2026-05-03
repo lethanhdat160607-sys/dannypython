@@ -3,7 +3,7 @@
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
 - **Target File:** `Forensics_is_fun.pptm`
-- **Key Skills And Tools:**
+- **Key Skills And Tools:** file, olevba,
 ---
 
 ## 🔍 Challenge 
@@ -13,6 +13,8 @@ Forensics_is_fun.pptm
 
 ### 🧪 Logic Extraction:
 
+I used the `file` command to check if there was any file data, and it turned out to be a Word file.
+
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF]
 └─$ file Forensics_is_fun.pptm
@@ -21,6 +23,7 @@ Forensics_is_fun.pptm: Microsoft PowerPoint 2007+
 
 ```
 
+I use the `olevba` command; this tool is used to analyze files for Microsoft Office to search for malware or automated scripts. The task usually involves analyzing `VBA Macros` code.
 
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF]
@@ -41,7 +44,7 @@ End Sub
 No suspicious keyword or IOC found.
 
 ```
-
+From what I suspect, it's an uncompressed file, so I'll use the decompression function to see what's inside.
 
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF]
@@ -202,11 +205,13 @@ Archive:  Forensics_is_fun.pptm
   inflating: ppt/slideMasters/hidden  
 ```
 
+I see a rather suspicious guess where the path contains quite a few `inflating` statements.
 ```
   inflating: ppt/slideMasters/hidden  
 
 
 ```
+I used the `cat` command to open the file and see what was inside.
 
 ```                                                                                                                                                       
 ┌──(kali㉿kali)-[~/Tools/CTF]
@@ -215,6 +220,7 @@ Z m x h Z z o g c G l j b 0 N U R n t E M W R f d V 9 r b j B 3 X 3 B w d H N f 
 ```
 
 
+I noticed it looked like `base64` code, so I changed it, and since there were spaces, I used the command `tr -d " "` to remove the spaces, and it produced the flag.
 
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF]
