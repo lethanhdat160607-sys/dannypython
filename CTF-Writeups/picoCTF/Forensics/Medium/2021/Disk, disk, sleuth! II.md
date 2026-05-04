@@ -13,8 +13,9 @@ dds2-alpine.flag.img.gz
 
 ### 🧪 Logic Extraction:
 
-```
-                                                                                                                                                            
+I use the `mmls` command to analyze the disk image file to display the partition structure: `Slot` - The partition's location in the partition table; `Start` - The starting sector of the partition. This is extremely important for executing subsequent commands like `fls` or `icat`; `End` - The ending sector of the partition; `Length` - The total number of sectors in that partition; `Description` - Describes the partition type (e.g., Unallocated, Win95 FAT32, Linux, etc.).
+
+```         
 ┌──(kali㉿kali)-[~/Tools/CTF]
 └─$ mmls dds2-alpine.flag.img
 DOS Partition Table
