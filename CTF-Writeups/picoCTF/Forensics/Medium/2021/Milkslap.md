@@ -39,6 +39,8 @@ I use the `zsteg` command to extract hidden data (steganography) from PNG and BM
 
 # Code Python
 
+Simply put, this code helps us crop a large image into a smaller one for analysis, and it also overlays and hides other images, making the data clearer.
+
 ```
 #usage:
 # need to place in one directory with *.png
