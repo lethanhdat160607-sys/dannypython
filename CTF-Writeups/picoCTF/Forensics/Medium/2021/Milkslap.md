@@ -44,8 +44,8 @@ Simply put, this code helps us crop a large image into a smaller one for analysi
 ```
 #usage:
 # need to place in one directory with *.png
-# chmod +x cut_frames.py
-# python3 cut_frames.py
+# chmod +x solve
+# python3 solve
 from PIL import Image
  
 def extract_frames():
