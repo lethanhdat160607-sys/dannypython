@@ -31,7 +31,7 @@ It seems to me that this is the content of an encrypted file, based on the `Salt
 
 
 #
-
+Now, to get the Flag, change the `Raw` and save the file as `file.des3`.
 <div align="center">
   <img width="911" height="576" alt="image" src="https://github.com/user-attachments/assets/bbbc5cdf-e9bf-4296-92dd-1d016b85ff13" />
 
