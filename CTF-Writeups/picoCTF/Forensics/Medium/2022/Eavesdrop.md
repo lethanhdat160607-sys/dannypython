@@ -39,7 +39,7 @@ Now, to get the Flag, change the `Raw` and save the file as `file.des3`.
 
 #
 
-We download the file and run the command `openssl des3 -d -salt -in file.des3 -out file.txt -k supersecretpassword123` to retrieve the flag file and open it.
+We download the file and run the command `openssl des3 -d -salt -in file.des3 -out file.txt -k supersecretpassword123` to retrieve the flag file and open it. The `openssl` command is the main program. OpenSSl is an extremely powerful cryptographic library that supports most current encryption and decryption protocols. `des3` is an algorithm used, abbreviated as `3DES`. It works by applying the DES algorithm three times to each block of data. `-d` is for fmax encryption, and you can remove this flag or use `-e` for encryption. The parameters `-int file.des3` specify the input file, and `-out file.txt` specify the clean content after decryption. `-salt` adds a random variable to the password during encryption, creating different keys even with the same password, thus protecting against lookup table attacks. `-k supersecretpassword123` is used to provide the password.
 
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
