@@ -3,7 +3,7 @@
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
 - **Target File:** `capture.flag.pcap`
-- **Key Skills And Tools:** wireshark, 
+- **Key Skills And Tools:** wireshark, openssl, reading data
 ---
 
 ## 🔍 Challenge 
