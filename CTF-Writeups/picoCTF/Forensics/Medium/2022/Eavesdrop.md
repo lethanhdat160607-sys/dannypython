@@ -37,6 +37,8 @@ Download packet capture
 
 </div>
 
+#
+
 We download the file and run the command `openssl des3 -d -salt -in file.des3 -out file.txt -k supersecretpassword123` to retrieve the flag file and open it.
 
 ```
