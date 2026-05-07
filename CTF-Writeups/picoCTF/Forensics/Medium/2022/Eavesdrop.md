@@ -13,7 +13,7 @@ Download packet capture
 
 ### 🧪 Logic Extraction:
 
-Open the pcap file on Wireshark and Follow the TCP Stream. `openssl des3 -d -salt -in file.des3 -out file.txt -k supersecretpassword123`
+Open the pcap file on Wireshark and follow the TCP stream. Then, under `tcp.port == 9002`, you'll find a piece of code: `openssl des3 -d -salt -in file.des3 -out file.txt -k supersecretpassword123`. We need to find the packet containing the transmitted data. Usually, you'll find the raw data in the file `file.des3`.
 
 <div align="center">
   <img width="918" height="582" alt="image" src="https://github.com/user-attachments/assets/135292aa-9992-4f87-b435-f857b0d66b27" />
@@ -22,7 +22,7 @@ Open the pcap file on Wireshark and Follow the TCP Stream. `openssl des3 -d -sal
 
 
 # 
-Open the pcap file on Wireshark and follow the TCP stream. Then, under `tcp.port == 9002`, you'll find a piece of code: `openssl des3 -d -salt -in file.des3 -out file.txt -k supersecretpassword123`. We need to find the packet containing the transmitted data. Usually, you'll find the raw data in the file `file.des3`.
+
 
 <div align="center">
   <img width="910" height="571" alt="image" src="https://github.com/user-attachments/assets/55f59e0c-272d-4c3d-8eaf-efff1ada2e2b" />
