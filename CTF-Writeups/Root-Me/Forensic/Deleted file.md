@@ -6,6 +6,7 @@
 
 
 </div>
+#
 
 I used the `gunzip` command to extract the files.
 
@@ -14,11 +15,22 @@ I used the `gunzip` command to extract the files.
 └─$ gunzip ch39.gz
 ```
 
+I then used the `file` command to probe the file data, and it showed `POSIX tar archive (GNU)`, indicating that it was closed and contained an additional file.
+
 ```                                                                                                                               
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ file ch39    
 ch39: POSIX tar archive (GNU)
 ```
+Next, I used the `tar -xvf` command to extract data from the file being packaged, and it gave us an image file.
+
+```
+┌──(kali㉿kali)-[~/Tools/CTF1]
+└─$ tar -xvf ch39    
+usb.image
+```
+
+I used the `file` command again to view the image file data.
 
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
@@ -28,11 +40,7 @@ usb.image: DOS/MBR boot sector, code offset 0x3c+2, OEM-ID "mkfs.fat", sectors/c
 
 
 ```
-
-┌──(kali㉿kali)-[~/Tools/CTF1]
-└─$ tar -xvf ch39    
-usb.image
-                                                                                                                                                            
+         
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ fls usb.image    
 r/r 3:  USB         (Volume Label Entry)
