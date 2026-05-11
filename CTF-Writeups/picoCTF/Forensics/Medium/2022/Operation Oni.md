@@ -37,6 +37,15 @@ Remote machine: ssh -i key_file -p 49406 ctf-player@saturn.picoctf.net
 
 </div>
 
+```
+┌──(kali㉿kali)-[~/Tools/CTF1]
+└─$ chmod 600 key_file 
+
+```
+<div align="center">
+   <img width="967" height="355" alt="image" src="https://github.com/user-attachments/assets/9b665428-efbc-47b6-9afb-8744cf8274ef" />
+
+</div>
 
 ## Run 
 .flag picoCTF{k3y_5l3u7h_b5066e83}
