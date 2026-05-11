@@ -3,7 +3,7 @@
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
 - **Target File:** `disk.img`
-- **Key Skills And Tools:** 
+- **Key Skills And Tools:** autopsy, mmls, fls, icat, reading disk data
 ---
 
 ## 🔍 Challenge 
