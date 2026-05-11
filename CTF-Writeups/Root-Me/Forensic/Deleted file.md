@@ -38,7 +38,7 @@ I used the `file` command again to view the image file data.
 usb.image: DOS/MBR boot sector, code offset 0x3c+2, OEM-ID "mkfs.fat", sectors/cluster 4, reserved sectors 4, root entries 512, sectors 63488 (volumes <=32 MB), Media descriptor 0xf8, sectors/FAT 64, sectors/track 62, heads 124, hidden sectors 2048, reserved 0x1, serial number 0xc7ecde5b, label: "USB        ", FAT (16 bit)
 ```
 
-
+I then used the `fls` command to analyze the image file and then used `icat` to extract the deleted image file.
 ```
          
 ┌──(kali㉿kali)-[~/Tools/CTF1]
@@ -58,7 +58,7 @@ V/V 1013702:    $OrphanFiles
 ch39  flag.png  usb.image
 
 ```
-
+I used the `exiftool` command to extract image data, and the flag indicated a person's name, which I found to be `Javier Turcot`.
 
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
