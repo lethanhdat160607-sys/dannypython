@@ -1,33 +1,43 @@
-# 🚩Lookey here - picoCTF 2022
+# 🚩Operation Oni - picoCTF 2022
 
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
-- **Target File:** `anthem.flag.txt`
-- **Key Skills And Tools:** grep, reading data
+- **Target File:** `disk.img`
+- **Key Skills And Tools:** 
 ---
 
 ## 🔍 Challenge 
 
-Attackers have hidden information in a very large mass of data in the past, maybe they are still doing it.
+Download this disk image, find the key and log into the remote machine.
 
-Download the data here.
+Note: if you are using the webshell, download and extract the disk image into /tmp not your home directory.
+
+Download disk image
+Remote machine: ssh -i key_file -p 49406 ctf-player@saturn.picoctf.net
 
 ### 🧪 Logic Extraction:
 
-I used the `cat` command to view the data.
 
 <div align="center">
-   <img width="850" height="459" alt="image" src="https://github.com/user-attachments/assets/ff9e2b8f-df81-45de-be16-24bacc85d4bc" />
+
+   <img width="732" height="352" alt="image" src="https://github.com/user-attachments/assets/ca98ca66-705c-4425-a160-8a85b3acae8c" />
 
 </div>
 
-# 
-I used the `grep pico` command and it produced the flag.
+#
+
 <div align="center">
-    <img width="640" height="62" alt="image" src="https://github.com/user-attachments/assets/72f50727-a658-4599-be54-d43fbcb1af97" />
+   <img width="359" height="557" alt="image" src="https://github.com/user-attachments/assets/f3d8932f-3d06-4101-9313-9b8552f88892" />
+</div>
+
+#
+
+<div align="center">
+   <img width="693" height="383" alt="image" src="https://github.com/user-attachments/assets/12b26e33-25ed-4803-8c3f-f417085f8594" />
 
 </div>
+
 
 ## Run 
-.flag picoCTF{gr3p_15_@w3s0m3_4c479940}
+.flag picoCTF{k3y_5l3u7h_b5066e83}
 
