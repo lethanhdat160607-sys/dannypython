@@ -2,7 +2,7 @@
 
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
-- **Target File:** `drawing.flag.svg`
+- **Target File:** `disk.img`
 - **Key Skills And Tools:** strings, reading data
 ---
 
