@@ -16,6 +16,8 @@ Download compressed disk image
 
 ### 🧪 Logic Extraction:
 
+I used the `mmls` command to list the items.
+      
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ mmls disk.flag.img       
