@@ -3,7 +3,7 @@
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
 - **Target File:** `disk.img`
-- **Key Skills And Tools:** 
+- **Key Skills And Tools:** autopsy, mmls, fls, icat, reading disk data
 ---
 
 ## 🔍 Challenge 
@@ -16,7 +16,7 @@ Download compressed disk image
 
 ### 🧪 Logic Extraction:
 
-I used the mmls command to read the partition table displayed on the hard drive.
+I used the mmls command to read the partition table displayed on the hard drive. 
 
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
@@ -128,7 +128,9 @@ disk.flag.img  enc_flag.txt
 ```
 
 We have previously established above that the flag.txt is in an unallocated state. Now, we understand the reason why. The command shred -u flag.txt was run, securely deleting the original flag.txt file by overwriting it and then deallocating and removing it.
-document: https://www.progress.com/blogs/use-aes-256-encryption-secure-data
+document: https://www.progress.com/blogs/use-aes-256-encryption-secure-ddata
+If you need it quickly, you can use a post-mortem examination tool.
+
 
 ```                                                                                                                                                                                            
 ┌──(kali㉿kali)-[~/Tools/CTF1]
@@ -141,7 +143,9 @@ bad decrypt
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ ls
 disk.flag.img  enc_flag.txt  flag.txt
-                                                                                              
+```
+Let's set the flag.
+```                                                                                              
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ cat flag.txt 
 picoCTF{h4un71ng_p457_5113beab}    
