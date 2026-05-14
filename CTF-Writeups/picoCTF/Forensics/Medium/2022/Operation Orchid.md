@@ -129,7 +129,6 @@ disk.flag.img  enc_flag.txt
 
 We have previously established above that the flag.txt is in an unallocated state. Now, we understand the reason why. The command shred -u flag.txt was run, securely deleting the original flag.txt file by overwriting it and then deallocating and removing it.
 
-document: https://www.progress.com/blogs/use-aes-256-encryption-secure-ddata
 
 You can also use the autopsy tool to read disks faster instead of using commands.
 
