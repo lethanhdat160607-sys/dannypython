@@ -41,7 +41,7 @@ This is the key to log into the server, and please remember the code to avoid mi
 
 #
 I used the `chmod 600` command to grant the highest possible permissions to your server. 
-document: https://mangohost.net/blog/chmod-600-specific-permission-setting/
+document:<a href="https://mangohost.net/blog/chmod-600-specific-permission-setting/"> Google </a>
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ chmod 600 key_file 
