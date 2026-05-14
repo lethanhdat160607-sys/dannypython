@@ -79,8 +79,8 @@ Use the `hexedit` command to modify the file's data, and the `pngcheck` command 
 
 ```
 #
-I used the `hexedit` command to modify the data, and these are the changed data: `"8950 4e47 0d0a 1a0a" 0000 000d "4948 4452" .PNG........IHDR` , ` 0009 7048 5973 "0000" 1625 0000 1625 0149 ..pHYs...%...%.I` , `5224 "f000 00ff a549 4441 5478" 5eec bd3f R$.....IDATx^..?` The places I'm marking above are the points where I changed the data based on: https://en.wikipedia.org/wiki/PNG
-
+I used the `hexedit` command to modify the data, and these are the changed data: `"8950 4e47 0d0a 1a0a" 0000 000d "4948 4452" .PNG........IHDR` , ` 0009 7048 5973 "0000" 1625 0000 1625 0149 ..pHYs...%...%.I` , `5224 "f000 00ff a549 4441 5478" 5eec bd3f R$.....IDATx^..?` The places I'm marking above are the points where I changed the data based on: 
+<a href="https://en.wikipedia.org/wiki/PNG"> Google </a>
 ```
 ┌──(kali㉿kali)-[~/Tools]
 └─$ xxd mystery | head -n20 
