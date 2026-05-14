@@ -3,7 +3,7 @@
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
 - **Target File:** `disk.img`
-- **Key Skills And Tools:** strings, reading data
+- **Key Skills And Tools:** mmls, reading data
 ---
 
 ## 🔍 Challenge 
