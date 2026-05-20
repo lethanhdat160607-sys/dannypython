@@ -3,7 +3,7 @@
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
 - **Target File:** `flag.png`
-- **Key Skills And Tools:** strings, reading data
+- **Key Skills And Tools:** file, zsteg, reading data image
 ---
 
 ## 🔍 Challenge 
@@ -15,11 +15,23 @@ The SOC analyst saw one image been sent back and forth between two people. They 
 
 ### 🧪 Logic Extraction:
 
+Open the challenge image file.
+
+<div align="center">
+
+   <img width="881" height="475" alt="image" src="https://github.com/user-attachments/assets/498d3c75-0b7e-4a60-a101-37337f2c782b" />
+
+
+</div>
+
+We used the `file` command to check if there was anything there; it was just a normal image file.
+
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ file flag.png 
 flag.png: PNG image data, 512 x 504, 8-bit/color RGBA, non-interlaced
 ```
+I used the `zsteg` command to extract bit data and found that it still contained a compressed file.
 
 ```     
 ┌──(kali㉿kali)-[~/Tools/CTF1]
@@ -44,6 +56,7 @@ extradata:0         .. file: Zip archive data, made by v3.0 UNIX, extract using 
     000000f0: 39 60 d7 57 d2 9a 16 ce  a3 74 10 3a 00 50 97 c1  |9`.W.....t.:.P..|
 chunk:0:IHDR        .. file: Adobe Photoshop Color swatch, version 0, 512 colors; 1st RGB space (0), w 0x1f8, x 0x806, y 0, z 0; 2nd RGB space (0), w 0, x 0, y 0, z 0                                                                                                                                                
 ```
+I extracted the file.
 
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
@@ -54,7 +67,7 @@ warning [flag.png]:  39739 extra bytes at beginning or within zipfile
    creating: secret/
   inflating: secret/flag.png  
 ```
-
+Open the file to get the flag.
 <div align="center">
 
   <img width="980" height="377" alt="image" src="https://github.com/user-attachments/assets/78ac69d6-41aa-4d21-ae4e-8b52699152cc" />
