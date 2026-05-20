@@ -31,8 +31,6 @@ Find the key to unlock this file. This tracefile might be good to analyze.
 ```
 tshark -r dump.pcap -Y 'eth.type == 0x4c4b' -T fields -e data.data | uniq | xxd -r -p | base64 -d
 This is the secret: picoCTF{R34DING_LOKd_                                                                                                                                                           
-
-
 ```
 
 #
