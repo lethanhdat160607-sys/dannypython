@@ -27,5 +27,5 @@ Check your modified picture here:
 
 
 ## Run 
-.flag picoCTF{P64P_4N4L7S1S_SU55355FUL_31010c46}
+.flag picoCTF{71m3_7r4v311ng_p1c7ur3_a4f2b526}
 
