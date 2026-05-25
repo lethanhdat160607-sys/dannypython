@@ -45,7 +45,7 @@ challengefile: data
 00000120: 46 45 44 43 4a 49 48 47 56 55 54 53 5a 59 58 57  FEDCJIHGVUTSZYXW
 00000130: 66 65 64 63 6a 69 68 67 76 75 74 73 7a 79 78 77  fedcjihgvutszyxw
 ```
-<a href="https://en.wikipedia.org/wiki/List_of_file_signatures"> Google </a>
+I checked to see if <a href="https://en.wikipedia.org/wiki/List_of_file_signatures">  list of file signature </a> matched the PNG or JPG file.
 
 
 <div align="center">
@@ -54,6 +54,13 @@ challengefile: data
 
 </div>
 
+#
+I have included both hex file headers for comparison below:
+
+
+`E0 FF D8 FF 46 4A 10 00 01 00 46 49`
+
+`FF D8 FF E0 00 10 4A 46 49 46 00 01`
 
 ```
 new_hex = ""
