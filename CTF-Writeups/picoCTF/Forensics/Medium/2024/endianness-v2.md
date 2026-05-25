@@ -57,10 +57,16 @@ I checked to see if <a href="https://en.wikipedia.org/wiki/List_of_file_signatur
 #
 I have included both hex file headers for comparison below:
 
-
 `E0 FF D8 FF 46 4A 10 00 01 00 46 49`
 
 `FF D8 FF E0 00 10 4A 46 49 46 00 01`
+
+Did you notice anything? Let's take the first 32 bits of data in both file headers as an example.
+
+`E0 FF D8 FF` is the reverse of `FF D8 FF E0`
+
+
+Therefore, our task is to reverse the order of the bytes for each 32-bit block. I wrote a Python program to do this and create a new jpg file named `solved.jpg`.
 
 ```
 new_hex = ""
