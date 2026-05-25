@@ -45,6 +45,13 @@ challengefile: data
 00000130: 66 65 64 63 6a 69 68 67 76 75 74 73 7a 79 78 77  fedcjihgvutszyxw
 ```
 
+<div align="center">
+  <img width="1346" height="587" alt="image" src="https://github.com/user-attachments/assets/53153746-75ca-4db4-8d01-d78ecc9cf688" />
+
+
+</div>
+
+
 ```
 new_hex = ""
  
