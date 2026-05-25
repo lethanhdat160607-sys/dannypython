@@ -20,22 +20,11 @@ Submit your modified picture here:
 
 Check your modified picture here:
 
-nc mimas.picoctf.net 49425
+`nc mimas.picoctf.net 49425`
 
 ### 🧪 Logic Extraction:
 
-The challenge was to give me a packet file. I used the `wireshark` tool and didn't see anything unusual. Then I tried the command `strings<file> | grep pico` and it immediately showed a flag.
 
-```
-┌──(kali㉿kali)-[~/Tools/CTF1]
-└─$ ls                
-trace.pcap
-                                                                                                                                                           
-┌──(kali㉿kali)-[~/Tools/CTF1]
-└─$ strings trace.pcap | grep pico
-picoCTF{P64P_4N4L7S1S_SU55355FUL_31010c46}F~
-
-```
 
 ## Run 
 .flag picoCTF{P64P_4N4L7S1S_SU55355FUL_31010c46}
