@@ -2,31 +2,23 @@
 
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
-- **Target File:** `trace.pcap`
+- **Target File:** `Windows_Logs.evtx`
 - **Key Skills And Tools:** strings, reading data
 ---
 
 ## 🔍 Challenge 
 
-How about some hide and seek heh?
+One of the employees at your company has their computer infected by malware! Turns out every time they try to switch on the computer, it shuts down right after they log in. The story given by the employee is as follows:
 
-Download this file and find the flag.
+They installed software using an installer they downloaded online
+They ran the installed software but it seemed to do nothing
+Now every time they bootup and login to their computer, a black command prompt screen quickly opens and closes and their computer shuts down instantly.
+See if you can find evidence for the each of these events and retrieve the flag (split into 3 pieces) from the correct logs!
+Download the Windows Log file here
 
 ### 🧪 Logic Extraction:
 
-The challenge was to give me a packet file. I used the `wireshark` tool and didn't see anything unusual. Then I tried the command `strings<file> | grep pico` and it immediately showed a flag.
-
-```
-┌──(kali㉿kali)-[~/Tools/CTF1]
-└─$ ls                
-trace.pcap
-                                                                                                                                                           
-┌──(kali㉿kali)-[~/Tools/CTF1]
-└─$ strings trace.pcap | grep pico
-picoCTF{P64P_4N4L7S1S_SU55355FUL_31010c46}F~
-
-```
 
 ## Run 
-.flag picoCTF{P64P_4N4L7S1S_SU55355FUL_31010c46}
+.flag picoCTF{Ev3nt_vi3wv3r_1s_a_pr3tty_us3ful_t00l_81ba3fe9}
 
