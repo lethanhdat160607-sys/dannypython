@@ -112,9 +112,25 @@ Hyperfocal Distance             : 2.13 m
 Light Value                     : 4.0
 
 ```
+Change the date.
 
+ - `-AllDates=1970:01:01 00:00:00.001`: This is a shortcut in the `exiftool` command that automatically finds and modifies the three most important timestamps of an image simultaneously: `DateTimeOriginal`, `CreateDate`, and `ModifyDate`.
 
- - `-AllDates=1970:01:01 00:00:00.001` : This is a shortcut in the `exiftool` command that automatically finds and modifies the three most important timestamps of an image simultaneously: `DateTimeOriginal`, `CreateDate`, and `ModifyDate`.
+ - `-DateTimeOriginal=1970:01:01 00:00:00.001`: Specifies the time the capture button was pressed to ensure that the data on this card is overwritten correctly.
+
+ - `-CreateDate=1970:01:01 00:00:00.001`: Is the time the image was captured and recorded as a digital data file in memory.
+
+Convert to fractions of a second.
+
+- `-SubSecTimeOriginal=001`: Adds 001 milliseconds to the time the shutter button is pressed.
+
+- `-SubSecTimeDigitized=001`: Adds 001 milliseconds to the time the file is created.
+
+- `-SubSecTime=001`: Adds 001 milliseconds to the time the file is edited.
+
+Set time zone
+
+- `-OffsetTime=+00:00`: Specifies the time zone for the above time as GMT/UTC (time zone 0). This helps the scoring system accurately identify this time as the standard international time, avoiding time discrepancies when transferred to computers in other countries.
 
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
