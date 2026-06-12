@@ -63,7 +63,50 @@ VMK entry found at 0x373a241
 
 ```
 
+```
+┌──(kali㉿kali)-[~/Tools/CTF1]
+└─$ sudo mkdir /mnt/bitlocker
+[sudo] password for kali: 
+mkdir: cannot create directory ‘/mnt/bitlocker’: File exists
+```
 
+```                                                                                                                                                            
+┌──(kali㉿kali)-[~/Tools/CTF1]
+└─$ sudo bdemount -p 'jacqueline' bitlocker-1.dd /mnt/bitlocker
+bdemount 20240502
+```
+```                                                                                                                                                            
+┌──(kali㉿kali)-[~/Tools/CTF1]
+└─$ sudo su
+```
+```
+┌──(root㉿kali)-[/home/kali/Tools/CTF1]
+└─# ls -la                     
+total 102424
+drwxrwxr-x 2 kali kali      4096 Jun 11 23:52 .
+drwxrwxr-x 5 kali kali     12288 Jun 11 23:48 ..
+-rw-rw-r-- 1 kali kali 104857600 Mar  6  2025 bitlocker-1.dd
+-rw-rw-r-- 1 kali kali      1510 Jun 11 23:53 bitlocker.hash
+```
+```                                                                                                                                                            
+┌──(root㉿kali)-[/home/kali/Tools/CTF1]
+└─# cd /mnt/extracted_files
+```
+```           
+┌──(root㉿kali)-[/mnt/extracted_files]
+└─# ls -la
+total 13
+drwxrwxrwx 1 root root 4096 Jul 15  2024  .
+drwxr-xr-x 4 root root 4096 Jun 11 22:25  ..
+drwxrwxrwx 1 root root    0 Jul 15  2024 '$RECYCLE.BIN'
+-rwxrwxrwx 1 root root   43 Jul 15  2024  flag.txt
+drwxrwxrwx 1 root root 4096 Jul 15  2024 'System Volume Information'
+```
+```                                                                                                                                                            
+┌──(root㉿kali)-[/mnt/extracted_files]
+└─# cat /mnt/extracted_files/flag.txt
+picoCTF{us3_b3tt3r_p4ssw0rd5_pl5!_3242adb1} 
+```
 ## Run 
 .flag picoCTF{us3_b3tt3r_p4ssw0rd5_pl5!_3242adb1}                                                                                                                                                            
 
