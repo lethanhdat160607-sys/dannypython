@@ -3,7 +3,7 @@
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
 - **Target File:** `bitlocker-1.dd`
-- **Key Skills And Tools:** file, bitlocker2john, reading data
+- **Key Skills And Tools:** file, bitlocker2john, bdemount, reading data disk
 ---
 
 ## 🔍 Challenge 
