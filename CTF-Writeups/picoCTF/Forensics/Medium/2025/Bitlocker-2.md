@@ -1,4 +1,4 @@
-# 🚩PcapPoisoning - picoCTF 2025
+# 🚩Bitlocker-2 - picoCTF 2025
 
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
