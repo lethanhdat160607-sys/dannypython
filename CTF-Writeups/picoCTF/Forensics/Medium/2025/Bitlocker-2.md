@@ -18,5 +18,4 @@ Download the disk image here
 
 
 ## Run 
-.flag picoCTF{P64P_4N4L7S1S_SU55355FUL_31010c46}
-
+.flag 
