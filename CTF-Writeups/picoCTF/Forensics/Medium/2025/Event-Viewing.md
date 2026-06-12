@@ -22,6 +22,56 @@ Download the Windows Log file here
 ### 🧪 Logic Extraction:
 
 
+```
+
+┌──(kali㉿kali)-[~/Tools/CTF1]
+└─$ ./evtx_dump Windows_Logs.evtx > output.xml
+
+┌──(kali㉿kali)-[~/Tools/CTF1]
+└─$ grep -i "==" output.xml
+    <Data>Totally_Legit_Software,1.3.3.7,0,0,cGljb0NURntFdjNudF92aTN3djNyXw==,(NULL),</Data>
+    <Data Name="ObjectValueName">Immediate Shutdown (MXNfYV9wcjN0dHlfdXMzZnVsXw==)</Data>
+                                                                                                                                                            
+┌──(kali㉿kali)-[~/Tools/CTF1]
+└─$ grep -i -C 5 "shutdown.exe" output.xml
+    <Data Name="HandleId">0x208</Data>
+    <Data Name="OperationType">%%1904</Data>
+    <Data Name="OldValueType">-</Data>
+    <Data Name="OldValue">-</Data>
+    <Data Name="NewValueType">%%1873</Data>
+    <Data Name="NewValue">C:\Program Files (x86)\Totally_Legit_Software\custom_shutdown.exe</Data>
+    <Data Name="ProcessId">0x1bd0</Data>
+    <Data Name="ProcessName">C:\Program Files (x86)\Totally_Legit_Software\Totally_Legit_Software.exe</Data>
+  </EventData>
+</Event>
+Record 187
+--
+    <Computer>DESKTOP-EKVR84B</Computer>
+    <Security UserID="S-1-5-21-3576963320-1344788273-4164204335-1001">
+    </Security>
+  </System>
+  <EventData>
+    <Data Name="param1">C:\Windows\system32\shutdown.exe (DESKTOP-EKVR84B)</Data>
+    <Data Name="param2">DESKTOP-EKVR84B</Data>
+    <Data Name="param3">No title for this reason could be found</Data>
+    <Data Name="param4">0x800000ff</Data>
+    <Data Name="param5">shutdown</Data>
+    <Data Name="param6">dDAwbF84MWJhM2ZlOX0=</Data>
+--
+    <Computer>DESKTOP-EKVR84B</Computer>
+    <Security UserID="S-1-5-21-3576963320-1344788273-4164204335-1001">
+    </Security>
+  </System>
+  <EventData>
+    <Data Name="param1">C:\Windows\system32\shutdown.exe (DESKTOP-EKVR84B)</Data>
+    <Data Name="param2">DESKTOP-EKVR84B</Data>
+    <Data Name="param3">No title for this reason could be found</Data>
+    <Data Name="param4">0x800000ff</Data>
+    <Data Name="param5">shutdown</Data>
+    <Data Name="param6">dDAwbF84MWJhM2ZlOX0=</Data>
+
+```
+
 ## Run 
 .flag picoCTF{Ev3nt_vi3wv3r_1s_a_pr3tty_us3ful_t00l_81ba3fe9}
 
