@@ -26,12 +26,15 @@ Download the Windows Log file here
 
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ ./evtx_dump Windows_Logs.evtx > output.xml
+```
 
+```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ grep -i "==" output.xml
     <Data>Totally_Legit_Software,1.3.3.7,0,0,cGljb0NURntFdjNudF92aTN3djNyXw==,(NULL),</Data>
     <Data Name="ObjectValueName">Immediate Shutdown (MXNfYV9wcjN0dHlfdXMzZnVsXw==)</Data>
-                                                                                                                                                            
+```
+```                                                                                                                                                            
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ grep -i -C 5 "shutdown.exe" output.xml
     <Data Name="HandleId">0x208</Data>
@@ -71,6 +74,12 @@ Record 187
     <Data Name="param6">dDAwbF84MWJhM2ZlOX0=</Data>
 
 ```
+
+<div align="center">
+    <img width="888" height="425" alt="image" src="https://github.com/user-attachments/assets/af320003-5273-4984-8e00-a5901e6a7c9d" />
+
+</div>
+
 
 ## Run 
 .flag picoCTF{Ev3nt_vi3wv3r_1s_a_pr3tty_us3ful_t00l_81ba3fe9}
