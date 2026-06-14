@@ -15,6 +15,7 @@ Download the disk image here
 
 ### 🧪 Logic Extraction:
 
+I used the `strings` command and got the flag immediately.
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ strings memdump.mem | grep 'picoCTF{'          
