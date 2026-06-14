@@ -21,6 +21,13 @@ Download the Windows Log file here
 
 ### 🧪 Logic Extraction:
 
+```
+┌──(kali㉿kali)-[~/Tools/CTF1]
+└─$ file Windows_Logs.evtx
+Windows_Logs.evtx: MS Windows 10-11 Event Log, version  3.2, 99 chunks (no. 98 in use), next record no. 8620
+
+```
+
 <a href="https://github.com/omerbenamram/evtx/releases/download/v0.9.0/evtx_dump-v0.9.0-x86_64-unknown-linux-gnu">download tools evtx_dump</a>
 ```
 
