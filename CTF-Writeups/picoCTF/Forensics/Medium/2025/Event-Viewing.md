@@ -3,7 +3,7 @@
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
 - **Target File:** `Windows_Logs.evtx`
-- **Key Skills And Tools:** strings, reading data
+- **Key Skills And Tools:** file, grep, Read the file and look up keywords.
 ---
 
 ## 🔍 Challenge 
@@ -21,6 +21,8 @@ Download the Windows Log file here
 
 ### 🧪 Logic Extraction:
 
+I used the `file` command to investigate, and this is a file with the .evtx extension, a file extracted from the Windows 10 or Windows 11 operating system, a Microsoft file format structure.
+
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ file Windows_Logs.evtx
@@ -28,20 +30,20 @@ Windows_Logs.evtx: MS Windows 10-11 Event Log, version  3.2, 99 chunks (no. 98 i
 
 ```
 
-<a href="https://github.com/omerbenamram/evtx/releases/download/v0.9.0/evtx_dump-v0.9.0-x86_64-unknown-linux-gnu">download tools evtx_dump</a>
+I use <a href="https://github.com/omerbenamram/evtx/releases/download/v0.9.0/evtx_dump-v0.9.0-x86_64-unknown-linux-gnu">tools evtx_dump</a> To convert all the binary encoded data of a `.evtx` file to public `XML` text format, you need to use the `chmod +x` command to grant it full execution permissions before running it.
+
 ```
 
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ ./evtx_dump Windows_Logs.evtx > output.xml
 ```
-
+From the problem statement, we can analyze search keywords such as `installed`, `downloaded`, `software`, `login`, `quickly`, `shuts down`, and `==` because they hide the base64 key. I used the command `grep -i -C 5 <file>` to find the keyword, and `C 5` extracted the top 5 lines of the keyword and the bottom 5 lines.
 ```
+
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ grep -i "==" output.xml
     <Data>Totally_Legit_Software,1.3.3.7,0,0,cGljb0NURntFdjNudF92aTN3djNyXw==,(NULL),</Data>
-    <Data Name="ObjectValueName">Immediate Shutdown (MXNfYV9wcjN0dHlfdXMzZnVsXw==)</Data>
-```
-```                                                                                                                                                            
+    <Data Name="ObjectValueName">Immediate Shutdown (MXNfYV9wcjN0dHlfdXMzZnVsXw==)</Data>                                                                                                                                                            
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ grep -i -C 5 "shutdown.exe" output.xml
     <Data Name="HandleId">0x208</Data>
@@ -81,6 +83,7 @@ Record 187
     <Data Name="param6">dDAwbF84MWJhM2ZlOX0=</Data>
 
 ```
+I used Cyberchef to encode the base64 code and convert it into a flag.
 
 <div align="center">
     <img width="888" height="425" alt="image" src="https://github.com/user-attachments/assets/af320003-5273-4984-8e00-a5901e6a7c9d" />
