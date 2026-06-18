@@ -28,7 +28,9 @@ Units are in 512-byte sectors
 002:  000:000   0000002048   0000616447   0000614400   Linux (0x83)
 003:  000:001   0000616448   0001140735   0000524288   Linux Swap / Solaris x86 (0x82)
 004:  000:002   0001140736   0002097151   0000956416   Linux (0x83)
-                                                                                                                                                           
+```
+
+```                                                                                                                                                           
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ fls -o 1140736 disk.img    
 d/d 64770:      home
@@ -60,12 +62,14 @@ r/r 4944:       .ash_history
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ fls -o 1140736 disk.img 172
 r/r 4944:       .ash_history
-                                                                                                                                                           
+```
+```                                                                                                                                                           
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ icat -o 1140736 disk.img 4944
 apk add git
 poweroff
-                                                                                                                                                           
+```
+```                                                                                                                                                          
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ fls -r -o 1140736 disk.img | grep -i "\.git"
 ++++ d/d 65665: .git
@@ -87,8 +91,7 @@ d/d 65703:      logs
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ fls -o 1140736 disk.img 65703
 r/r 65704:      HEAD
-d/d 65705:      refs
-                                                                                                                                                           
+d/d 65705:      refs                                                                                                                                                           
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ icat -o 1140736 disk.img 65704
 0000000000000000000000000000000000000000 327681bb38cf467cec328eec9707b240e3e74ced ctf-player <ctf-player@example.com> 1763542167 +0000  commit (initial): Wrap this phrase in the flag format: g17_1n_7h3_d15k_041217d8
