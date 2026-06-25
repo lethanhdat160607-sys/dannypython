@@ -136,5 +136,5 @@ Jay: Ask Rusty at the door and use password picoCTF{g17_r35cu3_16ac6bf3}.
 ```
 
 ## Run 
-.flag 
+.flag picoCTF{g17_r35cu3_16ac6bf3}
 
