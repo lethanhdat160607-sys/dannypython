@@ -58,7 +58,7 @@ d/d 174:        sys
 d/d 65275:      swap
 V/V 119417:     $OrphanFiles
 ```
-
+I used the `fls` command to list the files, `-o` to select the partition to scan, `-r` to enter a string and file, and `grep -i "\.git"` to find the file with the .git dot as suggested in the problem, and based on the drive letter, I searched deeper.
 ```           
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ fls -r -o 1140736 disk.img | grep -i "\.git"
@@ -82,8 +82,8 @@ d/d 65703:      logs
 └─$ fls -o 1140736 disk.img 65693
 Error extracting file from image (ext2fs_dir_open_meta: Error reading directory contents: 65693
 )
-```
-```                                                                                                                                                           
+
+                                                                                                                                                          
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ fls -o 1140736 disk.img 65665
 d/d 65666:      branches
