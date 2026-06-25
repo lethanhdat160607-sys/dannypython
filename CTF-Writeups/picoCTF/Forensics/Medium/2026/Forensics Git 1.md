@@ -113,6 +113,7 @@ d/d 65701:      4b
 d/d 65692:      5f
 
 ```
+When the `fls` command had already listed the data and there were signs of a hash code that I thought was a flag, I tried reading it with the `icat` command but got no result. So I converted it into a flag file and used the command `openssl zlib -d` to extract the contents to see the actual flag inside.
 
 ```           
 ┌──(kali㉿kali)-[~/Tools/CTF1]
@@ -126,6 +127,7 @@ r/r 65695:      50f47a5dabfb4397706aa18905df936595a86e
 └─$ openssl zlib -d < flag
 blob 31picoCTF{g17_r3m3mb3r5_d4ddf904}    
 ```
+
 ## Run 
 .flag picoCTF{g17_r3m3mb3r5_d4ddf904} 
 
