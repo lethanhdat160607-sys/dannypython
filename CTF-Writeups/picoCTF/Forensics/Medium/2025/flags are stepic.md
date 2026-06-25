@@ -1,4 +1,4 @@
-# 🚩Bitlocker-2 - picoCTF 2025
+# 🚩flags are stepic - picoCTF 2025
 
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
