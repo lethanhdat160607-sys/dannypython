@@ -18,7 +18,8 @@ Download the disk image here.
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ file disk.img                               
 disk.img: DOS/MBR boot sector; partition 1 : ID=0x83, active, start-CHS (0x2,0,33), end-CHS (0x263,8,56), startsector 2048, 614400 sectors; partition 2 : ID=0x82, start-CHS (0x263,8,57), end-CHS (0x3ff,15,63), startsector 616448, 524288 sectors; partition 3 : ID=0x83, start-CHS (0x3ff,15,63), end-CHS (0x3ff,15,63), startsector 1140736, 956416 sectors
-                                                                                                                                                           
+```
+```                                                                                                                                                           
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ fdisk -l disk.img
 Disk disk.img: 1 GiB, 1073741824 bytes, 2097152 sectors
@@ -32,35 +33,41 @@ Device     Boot   Start     End Sectors  Size Id Type
 disk.img1  *       2048  616447  614400  300M 83 Linux
 disk.img2        616448 1140735  524288  256M 82 Linux swap / Solaris
 disk.img3       1140736 2097151  956416  467M 83 Linux
-                                                                                                                                                           
+```
+```          
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ sudo mkdir -p /mnt/git2                                                               
-                                                                                                                                                           
+```
+```                                                                                                                                                           
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ sudo mount -o loop,offset=$((1140736 * 512)) disk.img /mnt/git2
-                                                                                                                                                           
+```
+
+```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ find /mnt/git2 -name ".git" -type d 2>/dev/null
 /mnt/git2/home/ctf-player/Code/killer-chat-app/.git
-                                                                                                                                                           
-┌──(kali㉿kali)-[~/Tools/CTF1]
-└─$ 
-                                                                                                                                                           
+```
+```                                                                                                                                                           
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ cd /mnt/git2/home/ctf-player/Code/killer-chat-app/.git
-                                                                                                                                                           
+```
+```           
 ┌──(kali㉿kali)-[/mnt/…/ctf-player/Code/killer-chat-app/.git]
 └─$ git log  --oneline 
 fatal: your current branch 'master' does not have any commits yet
-                                                                                                                                                           
+```
+```                                                                                                                                                           
 ┌──(kali㉿kali)-[/mnt/…/ctf-player/Code/killer-chat-app/.git]
 └─$ git status         
 fatal: this operation must be run in a work tree
-                                                                                                                                                           
+```
+```                                                                                                                                                           
 ┌──(kali㉿kali)-[/mnt/…/ctf-player/Code/killer-chat-app/.git]
 └─$ git status 
 fatal: this operation must be run in a work tree
-                                                                                                                                                           
+```
+```                                                                                                                                                           
 ┌──(kali㉿kali)-[/mnt/…/ctf-player/Code/killer-chat-app/.git]
 └─$ cd ..                                                 
                                                                                                                                                            
@@ -77,7 +84,8 @@ Changes to be committed:
         new file:   logs/2.txt
         new file:   logs/4.txt
         new file:   server
-
+```
+```
                                                                                                                                                            
 ┌──(kali㉿kali)-[/mnt/…/home/ctf-player/Code/killer-chat-app]
 └─$ ls .git/objects  
@@ -86,7 +94,8 @@ Changes to be committed:
 ┌──(kali㉿kali)-[/mnt/…/home/ctf-player/Code/killer-chat-app]
 └─$ git cat-file -batch-all-objects --batch-check
 error: did you mean `--batch-all-objects` (with two dashes)?
-                                                                                                                                                           
+```
+```                                                                                                                                                           
 ┌──(kali㉿kali)-[/mnt/…/home/ctf-player/Code/killer-chat-app]
 └─$ git cat-file --batch-all-objects --batch-check
 01533f718556a0e59f1467dae4fa462eed82c2a1 commit 238
@@ -111,8 +120,8 @@ e80b38b3322a5ba32ac07076ef5eeb4a59449875 commit 246
 ead27e2bd5a0fc22868ffb629a768f82dfcda11c tree 99
 f150f0b963ab3ee95ba5656212abd76d7f2fed2e blob 142
                                                                                                                                                            
-
-                                                                                                                                                           
+```
+```                                                                                                                                                           
 ┌──(kali㉿kali)-[/mnt/…/home/ctf-player/Code/killer-chat-app]
 └─$ git cat-file --batch-all-objects --batch | strings | grep -i "picoCTF\|3.txt"
 .100644 3.txt
