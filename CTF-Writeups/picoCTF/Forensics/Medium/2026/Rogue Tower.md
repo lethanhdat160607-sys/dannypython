@@ -2,7 +2,7 @@
 
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
-- **Target File:** `disko-4.dd.gz`
+- **Target File:** `rogue_tower.pcap`
 - **Key Skills And Tools:** strings, reading data
 ---
 
