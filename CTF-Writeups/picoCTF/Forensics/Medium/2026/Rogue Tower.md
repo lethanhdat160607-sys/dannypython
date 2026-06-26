@@ -88,7 +88,8 @@ g==
 <div align="center">
    <img width="1059" height="613" alt="image" src="https://github.com/user-attachments/assets/61331733-d467-473b-8db9-2e213a6347d0" />
 
-</div>  
+</div> 
+
 ## Run 
 .flag picoCTF{d3l_d0n7_h1d3_w3ll_4b0a805d}
 
