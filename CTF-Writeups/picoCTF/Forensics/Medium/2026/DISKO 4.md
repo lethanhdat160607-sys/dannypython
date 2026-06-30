@@ -3,7 +3,7 @@
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
 - **Target File:** `disko-4.dd.gz`
-- **Key Skills And Tools:** strings, reading data
+- **Key Skills And Tools:** fls, icat, zcat, fsstat, reading data disk
 ---
 
 ## 🔍 Challenge 
@@ -13,6 +13,8 @@ Can you find the flag in this disk image? This time I deleted the file! Let see 
 Download the disk image here.
 
 ### 🧪 Logic Extraction:
+
+I used the `file` command to check the contents of the file and the `fsstat` command, which is a tool in the Sleuth Kit that displays the block size and partition status. I also used `head -n 40` to limit the displayed results, only showing the first 40 lines of useful information.
 
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
@@ -60,6 +62,7 @@ FAT CONTENTS (in sectors)
 --------------------------------------------
 3184-3184 (1) -> EOF
 ```
+Next, I used the `fls` command to list the files on the disk, `-r` for recursive scanning, and `-d`, the most important parameter for selecting what to display, which was marked as deleted, but the actual data was still on the hard drive and had not been written to.
 
 ```        
 ┌──(kali㉿kali)-[~/Tools/CTF1]
@@ -67,6 +70,8 @@ FAT CONTENTS (in sectors)
 r/r * 522629:   log/messages
 r/r * 532021:   log/dont-delete.gz
 ```
+
+I then used the `icat` command to extract the raw data of a file and redirected it from that inode to a file named `recovered_dont-delete.gz`. I used the `file` command to check what type of file the extracted file was, whether it was deleted, had an extension, or was corrupted. Finally, I used the `zcat` command to read the contents of a compressed file without decompressing it to disk if the extracted file was indeed a compressed text file and had a flag.
 
 ```        
 ┌──(kali㉿kali)-[~/Tools/CTF1]
